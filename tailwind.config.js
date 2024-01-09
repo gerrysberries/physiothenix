@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-	content: ['./dist/**/*.{html,js}', './src/assets/**/*.{svg}'],
+	content: ['./dist/**/*.{html,js}'],
 	theme: {
 		fontSize: {
 			xs: ['12px', '16px'],
