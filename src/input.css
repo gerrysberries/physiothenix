@@ -1,11 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .btn-more {
+    @apply py-[15px] px-[23px] mx-auto flex flex-col justify-center items-center rounded-md uppercase text-white bg-primary-3 tracking-[1.4px] font-extrabold text-[14px] hover:cursor-pointer;
+  }
+  .btn-book {
+    @apply py-[15px] px-[23px] mx-auto flex flex-col justify-center items-center rounded-md uppercase text-white bg-primary-3 tracking-[1.4px] font-extrabold text-[14px] hover:cursor-pointer;
+  }
+}
+
 @layer utilities {
-	.button-more {
-		@apply py-[15px] px-[23px] mx-auto flex flex-col justify-center items-center drop-shadow-custom rounded-md uppercase text-white bg bg-primary-3 tracking-[1.4px] font-extrabold text-[14px] hover:cursor-pointer;
-	}
+  .contain-img {
+    @apply max-w-full h-auto;
+  }
+
+  .wrapper {
+    @apply max-w-7xl w-4/5 mx-auto;
+  }
 }
