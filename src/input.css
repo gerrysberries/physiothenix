@@ -4,6 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 @layer components {
   .btn-more {
     @apply py-[15px] px-[23px] mx-auto flex flex-col justify-center items-center rounded-md uppercase text-white bg-primary-3 tracking-[1.4px] font-extrabold text-[14px] hover:cursor-pointer;
@@ -19,6 +24,6 @@
   }
 
   .wrapper {
-    @apply max-w-7xl w-4/5 mx-auto;
+    @apply max-w-7xl w-[90%] mx-auto;
   }
 }
