@@ -17,18 +17,16 @@
 		<!-------------------- HEADER -------------------->
 
 		<header class="text-light bg-gradient-to-b from-[#21174A] to-primary-1">
-			<nav class="w-screen px-6 py-3 flex items-center">
-				<a
-					href="./home.html"
-					class=""
-				>
+			<nav class="w-full px-6 py-3 flex items-center justify-between">
+				<!-- Logo -->
+				<a href="./home.html">
 					<svg
 						width="844"
 						height="84"
 						viewBox="0 0 844 84"
 						fill="#ffffff"
 						xmlns="http://www.w3.org/2000/svg"
-						class="text-light max-w-xs max-h-12 w-auto h-auto sm:max-w-sm sm:max-h-16 md:max-w-md md:max-h-20"
+						class="text-light w-32 h-8 sm:w-48 sm:h-12 md:w-60 md:h-16"
 					>
 						<g clip-path="url(#clip0_649_1302)">
 							<path
@@ -163,19 +161,23 @@
 						</defs>
 					</svg>
 				</a>
-				<ul class="flex flex-col gap-4">
+
+				<!-- Menu for larger screens -->
+				<ul class="hidden sm:flex flex-col md:flex-row gap-4">
 					<li><a href="./home.html">Home</a></li>
 					<li><a href="./about.html">About</a></li>
 					<li><a href="./services.html">Services</a></li>
 					<li><a href="./location.html">Location</a></li>
 				</ul>
+
+				<!-- Hamburger icon for smaller screens -->
 				<svg
 					width="24"
 					height="25"
 					viewBox="0 0 24 25"
 					fill="none"
 					xmlns="http://www.w3.org/2000/svg"
-					class="text-light"
+					class="text-light sm:hidden"
 				>
 					<g id="menu-04">
 						<path

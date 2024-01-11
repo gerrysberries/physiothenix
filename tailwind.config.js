@@ -42,7 +42,7 @@ module.exports = {
 				'services-primary': "url('../src/assets/rings.jpg')",
 				'services-secondary': "url('../src/assets/stretch.jpg')",
 				'location-primary': "url('../src/assets/table.jpg')",
-				'location-secondary': "url('../src/assets/stretch.jpg')",
+				'location-secondary': "url('../src/assets/gym.jpg')",
 			},
 			screens: {
 				wide: '1440px',
