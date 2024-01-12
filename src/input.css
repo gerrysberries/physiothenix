@@ -17,9 +17,8 @@ img {
 th,
 td {
 	@apply border-b border-r border-light;
-	padding: 1rem;
-	/* border-right: solid 1px;
-	border-bottom: solid 1px; */
+	padding: 0.5rem 0.25rem;
+	border-bottom: solid 1px;
 	/* text-align: center; */
 }
 
