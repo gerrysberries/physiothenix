@@ -29,6 +29,12 @@ td {
 	.btn-book {
 		@apply py-5 px-6 mx-auto flex flex-col justify-center items-center rounded-md uppercase text-white bg-primary-3 tracking-[1.4px] font-extrabold text-[14px] hover:cursor-pointer;
 	}
+	/* .menu-mobile {
+		@apply hide flex md:flex-row flex-col items-center gap-8 absolute top-0 left-0 bg-gradient-to-b from-primary-1 to-primary-2 w-full min-h-[60vh] md:static md:min-h-fit md:w-auto top-[49px] justify-center;
+	} */
+	.menu-desktop {
+		@apply flex md:flex-row items-center gap-8 absolute top-0 left-0 bg-gradient-to-b from-primary-1 to-primary-2 w-full min-h-[60vh] md:static md:min-h-fit md:w-auto top-[49px] justify-center;
+	}
 }
 
 @layer utilities {
@@ -42,5 +48,9 @@ td {
 
 	.table-col-1 {
 		@apply uppercase font-bold tracking-widest;
+	}
+
+	.hide {
+		display: none;
 	}
 }

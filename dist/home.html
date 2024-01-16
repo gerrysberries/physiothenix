@@ -16,12 +16,15 @@
 	<body class="font-mulish">
 		<!-------------------- HEADER -------------------->
 
-		<header class="text-light bg-gradient-to-b from-[#21174A] to-primary-1">
+		<header
+			id="header"
+			class="fixed text-light bg-gradient-to-b from-primary-2 to-primary-1 w-full"
+		>
 			<nav class="w-full px-6 py-3 flex items-center justify-between">
 				<!-- Logo -->
 				<a
 					href="./home.html"
-					class=""
+					class="w-[50vw]"
 				>
 					<!-- <svg
 						width="844"
@@ -37,7 +40,7 @@
 						viewBox="0 0 844 84"
 						fill="#ffffff"
 						xmlns="http://www.w3.org/2000/svg"
-						class="text-light w-3/5 h-auto"
+						class="text-light w-fit h-auto"
 					>
 						<g clip-path="url(#clip0_649_1302)">
 							<path
@@ -174,21 +177,58 @@
 				</a>
 
 				<!-- Menu for larger screens -->
-				<ul class="hidden sm:flex flex-col md:flex-row gap-4">
+				<ul
+					id="menu"
+					class="hide flex md:flex-row flex-col items-center gap-8 absolute top-0 left-0 bg-gradient-to-b from-primary-1 to-primary-2 w-full min-h-[60vh] md:static md:min-h-fit md:w-auto top-[49px] justify-center md:menu-desktop"
+				>
+					<li>
+						<a
+							class="uppercase text-2xl font-extrabold"
+							href="./home.html"
+							>Home</a
+						>
+					</li>
+					<li>
+						<a
+							class="uppercase text-2xl font-bold"
+							href="./about.html"
+							>About</a
+						>
+					</li>
+					<li>
+						<a
+							class="uppercase text-2xl font-bold"
+							href="./services.html"
+							>Services</a
+						>
+					</li>
+					<li>
+						<a
+							class="uppercase text-2xl font-bold"
+							href="./location.html"
+							>Location</a
+						>
+					</li>
+					<li>
+						<a href="https://physiothenix.embodiaapp.com/patient_portal/online_bookings/609?practitioner_view_id=45859"><button class="btn-book">Book now</button></a>
+					</li>
+				</ul>
+				<!-- <ul class="hidden sm:flex flex-col md:flex-row gap-4">
 					<li><a href="./home.html">Home</a></li>
 					<li><a href="./about.html">About</a></li>
 					<li><a href="./services.html">Services</a></li>
 					<li><a href="./location.html">Location</a></li>
-				</ul>
+				</ul> -->
 
 				<!-- Hamburger icon for smaller screens -->
 				<svg
+					id="hamburger-button"
 					width="24"
 					height="25"
 					viewBox="0 0 24 25"
 					fill="none"
 					xmlns="http://www.w3.org/2000/svg"
-					class="text-light sm:hidden basis-1/4"
+					class="text-light md:hidden basis-[50px] cursor-pointer md:hidden"
 				>
 					<g id="menu-04">
 						<path
@@ -289,7 +329,7 @@
 					</div>
 
 					<div class="flex flex-col justify-center h-[424px] w-[322px] bg-home-card-2 bg-cover bg-primary-2 bg-blend-normal gap-4">
-						<h2 class="uppercase text-2xl font-extrabold mx-[50px]">Services</h2>
+						<h2 class="uppercase text-2xl font-extrabold mx-[50px]">Physiotherapy</h2>
 						<p class="text-sm px-8">We provide you with a comprehensive assessment to identify the contributors, as well as solutions to your injury and/or pain, through a collaborative effort.</p>
 
 						<p class="text-sm px-8">Our focus is on you, the treatment plans are devised around your unique needs and goals, while adhering to best practice and delivering the highest quality of care. It's our goal to help you regain and build strength, function and movement so you can enjoy your life!</p>
@@ -491,13 +531,7 @@
 				</a>
 				<p class="w-1/2">1156 St Clair Ave W, York, ON M6E 1B3</p>
 				<button class="btn-book">
-					<a href="https://physiothenix.embodiaapp.com/patient_portal/online_bookings/609?practitioner_view_id=45859"
-						><a
-							href="https://physiothenix.embodiaapp.com/patient_portal/online_bookings/609?practitioner_view_id=45859"
-							class="uppercase"
-							>Book now</a
-						></a
-					>
+					<a href="https://physiothenix.embodiaapp.com/patient_portal/online_bookings/609?practitioner_view_id=45859">Book now</a>
 				</button>
 				<p class="uppercase text-lg font-bold">connect with us</p>
 				<ul class="flex justify-center items-center gap-6 px-2">
@@ -564,5 +598,6 @@
 				</ul>
 			</div>
 		</footer>
+		<script src="../src/script.js"></script>
 	</body>
 </html>
