@@ -20,28 +20,28 @@
 			id="header"
 			class=""
 		>
-			<nav class="w-full px-6 py-3 flex items-center justify-between text-light bg-gradient-to-b from-primary-2 to-primary-1 fixed z-10">
+			<nav class="w-full px-6 py-3 flex items-center justify-between text-light bg-gradient-to-b from-primary-2 to-primary-1 fixed z-10 h-[70px] top-0">
 				<!-- Logo -->
 				<a
 					href="./home.html"
-					class="w-[50vw]"
+					class=""
 				>
-					<!-- <svg
-						width="844"
-						height="84"
-						viewBox="0 0 844 84"
-						fill="#ffffff"
-						xmlns="http://www.w3.org/2000/svg"
-						class="text-light w-32 h-8 sm:w-48 sm:h-12 md:w-60 md:h-16"
-					> -->
 					<svg
 						width="844"
 						height="84"
 						viewBox="0 0 844 84"
 						fill="#ffffff"
 						xmlns="http://www.w3.org/2000/svg"
-						class="text-light w-fit h-auto md:max-w-96"
+						class="text-light logo-size h-auto"
 					>
+						<!-- <svg
+						width="844"
+						height="84"
+						viewBox="0 0 844 84"
+						fill="#ffffff"
+						xmlns="http://www.w3.org/2000/svg"
+						class="text-light w-fit h-auto sm:max-w-96"
+					> -->
 						<g clip-path="url(#clip0_649_1302)">
 							<path
 								d="M35.492 17.5272C32.5862 14.9136 28.7629 13.6068 24.022 13.6068H-0.0200195V19.667H21.5934C24.3794 19.667 26.572 20.0344 28.1712 20.7693C31.0802 22.1426 32.5331 24.7412 32.5298 28.5652C32.5298 31.9669 31.519 34.3412 29.4977 35.6879C27.4763 37.0346 24.8415 37.708 21.5934 37.708H-0.0200195V65.6697H7.20605V43.6634H23.9921C29.368 43.6634 33.3576 42.1571 35.9608 39.1445C38.5244 36.2092 39.9086 32.4273 39.8456 28.5304C39.8655 23.7919 38.4143 20.1242 35.492 17.5272Z"
@@ -179,7 +179,7 @@
 				<!-- Menu for larger screens -->
 				<ul
 					id="menu"
-					class="hide flex lg:flex-row lg:bg-none flex-col items-center gap-8 absolute left-0 bg-gradient-to-b from-primary-1 to-primary-2 w-full min-h-[60vh] lg:static lg:min-h-fit lg:w-auto top-[49px] justify-center lg:menu-desktop uppercase text-2xl lg:text-base"
+					class="hide flex md:flex-row md:bg-none flex-col items-center gap-8 absolute left-0 bg-gradient-to-b from-primary-1 to-primary-2 w-full min-h-[60vh] md:static md:min-h-fit md:w-auto top-[49px] justify-center md:menu-desktop uppercase text-2xl md:text-base"
 				>
 					<li>
 						<a
@@ -210,8 +210,15 @@
 						>
 					</li>
 					<li>
-						<a href="https://physiothenix.embodiaapp.com/patient_portal/online_bookings/609?practitioner_view_id=45859"><button class="btn-book">Book now</button></a>
+						<a
+							class="btn-book text-center"
+							href="https://physiothenix.embodiaapp.com/patient_portal/online_bookings/609?practitioner_view_id=45859"
+							>Book now</a
+						>
 					</li>
+					<!-- <li>
+						<a href="https://physiothenix.embodiaapp.com/patient_portal/online_bookings/609?practitioner_view_id=45859"><button class="btn-book">Book now</button></a>
+					</li> -->
 				</ul>
 				<!-- <ul class="hidden sm:flex flex-col md:flex-row gap-4">
 					<li><a href="./home.html">Home</a></li>
@@ -228,7 +235,7 @@
 					viewBox="0 0 24 25"
 					fill="none"
 					xmlns="http://www.w3.org/2000/svg"
-					class="text-light lg:hidden basis-[50px] cursor-pointer"
+					class="text-light md:hidden basis-[50px] cursor-pointer"
 				>
 					<g id="menu-04">
 						<path
@@ -243,7 +250,7 @@
 				</svg>
 			</nav>
 
-			<div class="bg-primary bg-hero bg-cover bg-center bg-origin-content max-xl:py-40 xl:min-h-screen h-[40vh] mb-16">
+			<div class="bg-primary bg-hero bg-cover bg-center bg-no-repeat bg-origin-content lg:min-h-screen h-[40vh] mb-16 pt-[70px]">
 				<img
 					src=""
 					alt=""
@@ -273,7 +280,7 @@
 				class="text-center mb-4"
 			>
 				<div class="wrapper">
-					<h1 class="text-primary-1 font-bold text-4xl md:text-6xl">Welcome to Physiothenix</h1>
+					<h1 class="text-primary-1 font-bold text-4xl sm:text-6xl">Welcome to Physiothenix</h1>
 					<p class="my-4 uppercase text-text font-bold tracking-[1.4px] lg:text-2xl">Where transformation meets movement</p>
 					<button class="btn-more">
 						<a
@@ -325,11 +332,11 @@
 
 			<!-------------------- VALUES -------------------->
 
-			<style>
+			<!-- <style>
 				#cards * {
 					outline: 1px solid red;
 				}
-			</style>
+			</style> -->
 
 			<!-- h-[424px] w-[322px] -->
 
@@ -337,20 +344,20 @@
 				id="cards"
 				class="text-center mb-16"
 			>
-				<div class="flex flex-col lg:flex-row lg:flex-wrap px-[55px] justify-center items-center text-light gap-8 wrapper">
-					<div class="flex flex-1 flex-col justify-center bg-home-card-1 bg-cover bg-primary-2 bg-blend-normal gap-4 h-[424px] lg:h-[460px] w-[322px]">
+				<div class="flex flex-col sm:flex-row sm:flex-wrap px-[55px] justify-center items-center text-light gap-8 wrapper">
+					<div class="flex flex-col justify-center bg-home-card-1 bg-cover bg-primary-2 bg-blend-soft-light gap-4 h-[424px] lg:h-[460px] w-[322px]">
 						<h2 class="uppercase text-2xl font-extrabold mx-[50px]">We value helping you</h2>
 						<p class="text-sm lg:text-base px-8">Our goal at Physiothenix is to redefine your impossible, sculpting a better version of yourself. Whether you're seeking pain reduction, recovery facilitation, functional restoration, capacity building, performance enhancement, or a personalized coaching journey - Physiothenix has your back.</p>
 					</div>
 
-					<div class="flex flex-1 flex-col justify-center bg-home-card-2 bg-cover bg-primary-2 bg-blend-normal gap-4 h-[424px] lg:h-[460px] w-[322px]">
+					<div class="flex flex-col justify-center bg-home-card-2 bg-cover bg-primary-2 bg-blend-soft-light gap-4 h-[424px] lg:h-[460px] w-[322px]">
 						<h2 class="uppercase text-2xl font-extrabold mx-[50px]">Physiotherapy</h2>
 						<p class="text-sm lg:text-base px-8">We provide you with a comprehensive assessment to identify the contributors, as well as solutions to your injury and/or pain, through a collaborative effort.</p>
 
 						<p class="text-sm lg:text-base px-8">Our focus is on you, the treatment plans are devised around your unique needs and goals, while adhering to best practice and delivering the highest quality of care. It's our goal to help you regain and build strength, function and movement so you can enjoy your life!</p>
 					</div>
 
-					<div class="flex flex-1 flex-col justify-center bg-home-card-3 bg-cover bg-primary-2 bg-blend-normal gap-4 h-[424px] lg:h-[460px] w-[322px]">
+					<div class="flex flex-col justify-center bg-home-card-3 bg-cover bg-primary-2 bg-blend-soft-light gap-4 h-[424px] lg:h-[460px] w-[322px]">
 						<h2 class="uppercase text-2xl font-extrabold mx-[50px]">Online Coaching</h2>
 						<p class="text-sm lg:text-base px-8">Elevate Your Potential with Physiothenix Online Coaching!</p>
 
@@ -371,7 +378,7 @@
 
 			<section
 				id="reviews"
-				class="relative bg-gradient-to-b text-white from-[#21174A] to-primary-1 pt-9"
+				class="relative bg-gradient-to-b text-white from-[#21174A] to-primary-1 pt-9 mb-16"
 			>
 				<div class="wrapper">
 					<h3 class="uppercase text-2xl font-extrabold mb-4">Reviews</h3>
@@ -390,9 +397,9 @@
 
 			<section
 				id="map"
-				class="pt-8 lg:mb-14"
+				class="md:mb-14"
 			>
-				<div class="lg:hidden">
+				<div class="md:hidden">
 					<iframe
 						width=""
 						height="250"
@@ -419,11 +426,11 @@
 		</style> -->
 
 		<footer class="px-6 py-6 bg-gradient-to-b text-white from-primary-1 to-primary-2">
-			<div class="py-4 flex flex-col lg:flex-row gap-10 items-center wrapper text-center">
-				<div class="hidden lg:block lg:basis-[33%]">
+			<div class="py-4 flex flex-col md:flex-row gap-10 items-center wrapper text-center">
+				<div class="hidden md:block md:basis-[33%]">
 					<iframe
 						width=""
-						height="250"
+						height="200"
 						frameborder=""
 						style="border: 0"
 						loading="lazy"
@@ -436,7 +443,7 @@
 					</iframe>
 				</div>
 
-				<div class="flex flex-col gap-6 items-center lg:items-start lg:mr-auto lg:text-left">
+				<div class="flex flex-col gap-6 items-center md:items-start md:mr-auto md:text-left md:self-start">
 					<a
 						href="./home.html"
 						class="flex justify-center items-center"
@@ -447,8 +454,9 @@
 							viewBox="0 0 844 84"
 							fill="#ffffff"
 							xmlns="http://www.w3.org/2000/svg"
-							class="text-light w-4/5 h-auto sm:w-48 md:w-64 lg:w-80 xl:w-96"
+							class="text-light logo-size-footer h-auto"
 						>
+							<!-- sm:w-48 md:w-64 lg:w-80 xl:w-96 -->
 							<g clip-path="url(#clip0_649_1302)">
 								<path
 									d="M35.492 17.5272C32.5862 14.9136 28.7629 13.6068 24.022 13.6068H-0.0200195V19.667H21.5934C24.3794 19.667 26.572 20.0344 28.1712 20.7693C31.0802 22.1426 32.5331 24.7412 32.5298 28.5652C32.5298 31.9669 31.519 34.3412 29.4977 35.6879C27.4763 37.0346 24.8415 37.708 21.5934 37.708H-0.0200195V65.6697H7.20605V43.6634H23.9921C29.368 43.6634 33.3576 42.1571 35.9608 39.1445C38.5244 36.2092 39.9086 32.4273 39.8456 28.5304C39.8655 23.7919 38.4143 20.1242 35.492 17.5272Z"
@@ -583,9 +591,12 @@
 						</svg>
 					</a>
 					<p class="w-1/2">1156 St Clair Ave W, York, ON M6E 1B3</p>
-					<button class="btn-book lg:m-0">
-						<a href="https://physiothenix.embodiaapp.com/patient_portal/online_bookings/609?practitioner_view_id=45859">Book now</a>
-					</button>
+
+					<a
+						class="btn-book md:m-0"
+						href="https://physiothenix.embodiaapp.com/patient_portal/online_bookings/609?practitioner_view_id=45859"
+						>Book now</a
+					>
 				</div>
 				<div class="flex flex-col lg:gap-4">
 					<p class="uppercase text-lg font-bold">connect with us</p>

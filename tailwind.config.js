@@ -45,7 +45,14 @@ module.exports = {
 				'location-secondary': "url('../src/assets/gym.jpg')",
 			},
 			screens: {
-				wide: '1440px',
+				sm: '550px',
+				// => @media (min-width: 550px) { ... }
+
+				md: '1100px',
+				// => @media (min-width: 1100px) { ... }
+
+				lg: '1500px',
+				// => @media (min-width: 1500px) { ... }
 			},
 		},
 	},

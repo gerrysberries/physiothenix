@@ -27,7 +27,7 @@ td {
 		@apply py-[15px] px-[23px] mx-auto flex flex-col justify-center items-center rounded-md uppercase text-white bg-primary-3 tracking-[1.4px] font-extrabold text-[14px] hover:cursor-pointer;
 	}
 	.btn-book {
-		@apply py-5 px-6 mx-auto flex flex-col justify-center items-center rounded-md uppercase text-white bg-primary-3 tracking-[1.4px] font-extrabold text-[14px] hover:cursor-pointer;
+		@apply py-3 px-4 mx-auto flex flex-col justify-center items-center rounded-md uppercase text-white bg-primary-3 tracking-[1.4px] font-extrabold text-[14px] hover:cursor-pointer;
 	}
 	/* .menu-mobile {
 		@apply hide flex md:flex-row flex-col items-center gap-8 absolute top-0 left-0 bg-gradient-to-b from-primary-1 to-primary-2 w-full min-h-[60vh] md:static md:min-h-fit md:w-auto top-[49px] justify-center;
@@ -61,5 +61,11 @@ td {
 
 	.hide {
 		display: none;
+	}
+	.logo-size {
+		width: clamp(180px, 50vw, 320px);
+	}
+	.logo-size-footer {
+		width: clamp(250px, 50vw, 320px);
 	}
 }

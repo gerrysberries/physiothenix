@@ -20,28 +20,28 @@
 			id="header"
 			class=""
 		>
-			<nav class="w-full px-6 py-3 flex items-center justify-between text-light bg-gradient-to-b from-primary-2 to-primary-1 fixed z-10">
+			<nav class="w-full px-6 py-3 flex items-center justify-between text-light bg-gradient-to-b from-primary-2 to-primary-1 fixed z-10 h-[70px] top-0">
 				<!-- Logo -->
 				<a
 					href="./home.html"
-					class="w-[50vw]"
+					class=""
 				>
-					<!-- <svg
-						width="844"
-						height="84"
-						viewBox="0 0 844 84"
-						fill="#ffffff"
-						xmlns="http://www.w3.org/2000/svg"
-						class="text-light w-32 h-8 sm:w-48 sm:h-12 md:w-60 md:h-16"
-					> -->
 					<svg
 						width="844"
 						height="84"
 						viewBox="0 0 844 84"
 						fill="#ffffff"
 						xmlns="http://www.w3.org/2000/svg"
-						class="text-light w-fit h-auto md:max-w-96"
+						class="text-light logo-size h-auto"
 					>
+						<!-- <svg
+						width="844"
+						height="84"
+						viewBox="0 0 844 84"
+						fill="#ffffff"
+						xmlns="http://www.w3.org/2000/svg"
+						class="text-light w-fit h-auto sm:max-w-96"
+					> -->
 						<g clip-path="url(#clip0_649_1302)">
 							<path
 								d="M35.492 17.5272C32.5862 14.9136 28.7629 13.6068 24.022 13.6068H-0.0200195V19.667H21.5934C24.3794 19.667 26.572 20.0344 28.1712 20.7693C31.0802 22.1426 32.5331 24.7412 32.5298 28.5652C32.5298 31.9669 31.519 34.3412 29.4977 35.6879C27.4763 37.0346 24.8415 37.708 21.5934 37.708H-0.0200195V65.6697H7.20605V43.6634H23.9921C29.368 43.6634 33.3576 42.1571 35.9608 39.1445C38.5244 36.2092 39.9086 32.4273 39.8456 28.5304C39.8655 23.7919 38.4143 20.1242 35.492 17.5272Z"
@@ -179,11 +179,11 @@
 				<!-- Menu for larger screens -->
 				<ul
 					id="menu"
-					class="hide flex lg:flex-row lg:bg-none flex-col items-center gap-8 absolute left-0 bg-gradient-to-b from-primary-1 to-primary-2 w-full min-h-[60vh] lg:static lg:min-h-fit lg:w-auto top-[49px] justify-center lg:menu-desktop uppercase text-2xl lg:text-base"
+					class="hide flex md:flex-row md:bg-none flex-col items-center gap-8 absolute left-0 bg-gradient-to-b from-primary-1 to-primary-2 w-full min-h-[60vh] md:static md:min-h-fit md:w-auto top-[49px] justify-center md:menu-desktop uppercase text-2xl md:text-base"
 				>
 					<li>
 						<a
-							class="font-bold"
+							class="font-extrabold"
 							href="./home.html"
 							>Home</a
 						>
@@ -204,14 +204,21 @@
 					</li>
 					<li>
 						<a
-							class="font-extrabold"
+							class="font-bold"
 							href="./location.html"
 							>Location</a
 						>
 					</li>
 					<li>
-						<a href="https://physiothenix.embodiaapp.com/patient_portal/online_bookings/609?practitioner_view_id=45859"><button class="btn-book">Book now</button></a>
+						<a
+							class="btn-book text-center"
+							href="https://physiothenix.embodiaapp.com/patient_portal/online_bookings/609?practitioner_view_id=45859"
+							>Book now</a
+						>
 					</li>
+					<!-- <li>
+						<a href="https://physiothenix.embodiaapp.com/patient_portal/online_bookings/609?practitioner_view_id=45859"><button class="btn-book">Book now</button></a>
+					</li> -->
 				</ul>
 				<!-- <ul class="hidden sm:flex flex-col md:flex-row gap-4">
 					<li><a href="./home.html">Home</a></li>
@@ -228,7 +235,7 @@
 					viewBox="0 0 24 25"
 					fill="none"
 					xmlns="http://www.w3.org/2000/svg"
-					class="text-light lg:hidden basis-[50px] cursor-pointer"
+					class="text-light md:hidden basis-[50px] cursor-pointer"
 				>
 					<g id="menu-04">
 						<path
@@ -249,7 +256,7 @@
 
 			<section
 				id="hero"
-				class="mb-16"
+				class="mb-16 pt-[70px] md:hidden"
 			>
 				<div class="bg-primary bg-location-primary bg-cover bg-center max-xl:py-40 xl:min-h-screen h-[40vh]">
 					<img
@@ -261,78 +268,88 @@
 
 			<!-------------------- ADDRESS -------------------->
 
-			<style>
+			<!-- <style>
 				#services * {
-					/* outline: 1px solid red; */
+					outline: 1px solid red;
 				}
-			</style>
+			</style> -->
 
 			<section
 				id="services"
-				class="text-center mb-16"
+				class="text-center md:text-left md:pt-[70px] my-16"
 			>
-				<div class="wrapper px-16">
-					<h1 class="uppercase font-extrabold text-2xl tracking-wider mb-6">Physiothenix in Toronto</h1>
-					<address class="not-italic flex flex-col gap-4 mb-8">
-						1156 St Clair Ave W, York, ON M6E 1B3
-						<div>
-							<a
-								class=""
-								href="tel:+1(647)912-9177"
-								>647-912-9177</a
-							><br />
-							<a
-								class=""
-								href="mailto:lquigley@physiothenix.com"
-								>lquigley@physiothenix.com</a
-							>
+				<div class="wrapper">
+					<div class="md:flex md:gap-20">
+						<div class="flex-1">
+							<img
+								class="w-full hidden md:block aspect-square"
+								src="../src/assets/table.jpg"
+								alt=""
+							/>
 						</div>
-					</address>
-
-					<ul class="flex justify-center items-center gap-6 px-2 mb-8">
-						<li>
-							<a href="https://www.instagram.com/physiothenix/">
-								<!-- <img src="../src/assets/Instagram.svg" alt="instagram icon" /> -->
-								<svg
-									width="33"
-									height="32"
-									viewBox="0 0 33 32"
-									fill="none"
-									xmlns="http://www.w3.org/2000/svg"
-									class="hover:text-primary-1"
-								>
-									<g id="Instagram">
-										<path
-											id="Vector"
-											d="M17.8707 2.66802C18.8436 2.66429 19.8166 2.67407 20.7893 2.69736L21.048 2.70669C21.3467 2.71736 21.6413 2.73069 21.9973 2.74669C23.416 2.81336 24.384 3.03736 25.2333 3.36669C26.1133 3.70536 26.8547 4.16402 27.596 4.90536C28.2738 5.5715 28.7984 6.37728 29.1333 7.26669C29.4627 8.11602 29.6867 9.08535 29.7533 10.504C29.7693 10.8587 29.7827 11.1547 29.7933 11.4534L29.8013 11.712C29.825 12.6843 29.8352 13.6568 29.832 14.6294L29.8333 15.624V17.3707C29.8366 18.3437 29.8264 19.3167 29.8027 20.2894L29.7947 20.548C29.784 20.8467 29.7707 21.1414 29.7547 21.4974C29.688 22.916 29.4613 23.884 29.1333 24.7334C28.7995 25.6237 28.2748 26.4302 27.596 27.096C26.9293 27.7738 26.1231 28.2984 25.2333 28.6334C24.384 28.9627 23.416 29.1867 21.9973 29.2534C21.6413 29.2694 21.3467 29.2827 21.048 29.2934L20.7893 29.3014C19.8166 29.3251 18.8436 29.3353 17.8707 29.332L16.876 29.3334H15.1307C14.1577 29.3366 13.1847 29.3264 12.212 29.3027L11.9533 29.2947C11.6368 29.2832 11.3204 29.2699 11.004 29.2547C9.58533 29.188 8.61733 28.9614 7.76666 28.6334C6.87691 28.2991 6.07098 27.7745 5.40533 27.096C4.72672 26.4297 4.20163 25.6234 3.86666 24.7334C3.53733 23.884 3.31333 22.916 3.24666 21.4974C3.23181 21.181 3.21848 20.8645 3.20666 20.548L3.2 20.2894C3.17541 19.3167 3.1643 18.3437 3.16666 17.3707V14.6294C3.16294 13.6568 3.17272 12.6843 3.196 11.712L3.20533 11.4534C3.216 11.1547 3.22933 10.8587 3.24533 10.504C3.312 9.08402 3.536 8.11736 3.86533 7.26669C4.20049 6.37685 4.72661 5.57128 5.40666 4.90669C6.07186 4.22769 6.87728 3.70212 7.76666 3.36669C8.61733 3.03736 9.584 2.81336 11.004 2.74669L11.9533 2.70669L12.212 2.70002C13.1842 2.67545 14.1568 2.66434 15.1293 2.66669L17.8707 2.66802ZM16.5 9.33469C15.6167 9.3222 14.7397 9.48539 13.92 9.81478C13.1003 10.1442 12.3542 10.6332 11.7251 11.2534C11.0961 11.8737 10.5965 12.6127 10.2556 13.4277C9.91463 14.2427 9.73905 15.1173 9.73905 16.0007C9.73905 16.8841 9.91463 17.7587 10.2556 18.5737C10.5965 19.3886 11.0961 20.1277 11.7251 20.7479C12.3542 21.3682 13.1003 21.8572 13.92 22.1866C14.7397 22.516 15.6167 22.6792 16.5 22.6667C18.2681 22.6667 19.9638 21.9643 21.214 20.7141C22.4643 19.4638 23.1667 17.7681 23.1667 16C23.1667 14.2319 22.4643 12.5362 21.214 11.286C19.9638 10.0357 18.2681 9.33469 16.5 9.33469ZM16.5 12.0014C17.0313 11.9916 17.5593 12.0878 18.0531 12.2843C18.5468 12.4808 18.9964 12.7738 19.3757 13.1461C19.755 13.5184 20.0562 13.9625 20.2619 14.4525C20.4676 14.9425 20.5736 15.4686 20.5737 16C20.5738 16.5314 20.468 17.0576 20.2624 17.5476C20.0569 18.0377 19.7558 18.4819 19.3767 18.8543C18.9975 19.2267 18.548 19.5198 18.0543 19.7166C17.5606 19.9133 17.0327 20.0096 16.5013 20C15.4405 20 14.423 19.5786 13.6729 18.8284C12.9228 18.0783 12.5013 17.0609 12.5013 16C12.5013 14.9392 12.9228 13.9217 13.6729 13.1716C14.423 12.4214 15.4405 12 16.5013 12L16.5 12.0014ZM23.5 7.33469C23.0699 7.3519 22.6631 7.53489 22.3648 7.84532C22.0666 8.15575 21.9 8.56953 21.9 9.00002C21.9 9.43051 22.0666 9.8443 22.3648 10.1547C22.6631 10.4652 23.0699 10.6481 23.5 10.6654C23.942 10.6654 24.3659 10.4898 24.6785 10.1772C24.9911 9.86464 25.1667 9.44072 25.1667 8.99869C25.1667 8.55666 24.9911 8.13274 24.6785 7.82018C24.3659 7.50762 23.942 7.33202 23.5 7.33202V7.33469Z"
-											fill="currentColor"
-										/>
-									</g>
-								</svg>
-							</a>
-						</li>
-						<li>
-							<a href="https://ca.linkedin.com/in/landynquigley">
-								<svg
-									width="33"
-									height="32"
-									viewBox="0 0 33 32"
-									fill="none"
-									xmlns="http://www.w3.org/2000/svg"
-									class="hover:text-primary-1"
-								>
-									<g id="Linkedin">
-										<path
-											id="Vector"
-											d="M3 4.86225C3 3.83363 3.85475 3 4.90937 3H27.0906C28.1453 3 29 3.83363 29 4.86225V27.1378C29 28.1664 28.1453 29 27.0906 29H4.90937C3.85475 29 3 28.1664 3 27.1378V4.86225ZM11.0324 24.7652V13.0246H7.13075V24.7652H11.0324ZM9.08238 11.4208C10.4425 11.4208 11.2891 10.5205 11.2891 9.39275C11.2647 8.24062 10.4441 7.36475 9.10838 7.36475C7.77262 7.36475 6.9 8.24225 6.9 9.39275C6.9 10.5205 7.74662 11.4208 9.05638 11.4208H9.08238ZM17.0579 24.7652V18.2084C17.0579 17.8574 17.0839 17.5064 17.1879 17.2561C17.469 16.5557 18.1109 15.8294 19.1899 15.8294C20.602 15.8294 21.1659 16.9051 21.1659 18.4846V24.7652H25.0675V18.0312C25.0675 14.4237 23.1435 12.7467 20.576 12.7467C18.5057 12.7467 17.5779 13.8842 17.0579 14.6854V14.726H17.0319C17.0405 14.7124 17.0492 14.6989 17.0579 14.6854V13.0246H13.1579C13.2066 14.1264 13.1579 24.7652 13.1579 24.7652H17.0579Z"
-											fill="currentColor"
-										/>
-									</g>
-								</svg>
-							</a>
-						</li>
-					</ul>
-					<button class="btn-book">Book now</button>
+						<div class="flex-1 self-center md:flex md:flex-col md:items-start">
+							<h1 class="uppercase font-extrabold text-2xl tracking-wider mb-6">Physiothenix in Toronto</h1>
+							<address class="not-italic flex flex-col gap-4 mb-8">
+								1156 St Clair Ave W, York, ON M6E 1B3
+								<div>
+									<a
+										class=""
+										href="tel:+1(647)912-9177"
+										>647-912-9177</a
+									><br />
+									<a
+										class=""
+										href="mailto:lquigley@physiothenix.com"
+										>lquigley@physiothenix.com</a
+									>
+								</div>
+							</address>
+							<ul class="flex justify-center items-center gap-6 px-2 mb-8">
+								<li>
+									<a href="https://www.instagram.com/physiothenix/">
+										<!-- <img src="../src/assets/Instagram.svg" alt="instagram icon" /> -->
+										<svg
+											width="33"
+											height="32"
+											viewBox="0 0 33 32"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+											class="hover:text-primary-3"
+										>
+											<g id="Instagram">
+												<path
+													id="Vector"
+													d="M17.8707 2.66802C18.8436 2.66429 19.8166 2.67407 20.7893 2.69736L21.048 2.70669C21.3467 2.71736 21.6413 2.73069 21.9973 2.74669C23.416 2.81336 24.384 3.03736 25.2333 3.36669C26.1133 3.70536 26.8547 4.16402 27.596 4.90536C28.2738 5.5715 28.7984 6.37728 29.1333 7.26669C29.4627 8.11602 29.6867 9.08535 29.7533 10.504C29.7693 10.8587 29.7827 11.1547 29.7933 11.4534L29.8013 11.712C29.825 12.6843 29.8352 13.6568 29.832 14.6294L29.8333 15.624V17.3707C29.8366 18.3437 29.8264 19.3167 29.8027 20.2894L29.7947 20.548C29.784 20.8467 29.7707 21.1414 29.7547 21.4974C29.688 22.916 29.4613 23.884 29.1333 24.7334C28.7995 25.6237 28.2748 26.4302 27.596 27.096C26.9293 27.7738 26.1231 28.2984 25.2333 28.6334C24.384 28.9627 23.416 29.1867 21.9973 29.2534C21.6413 29.2694 21.3467 29.2827 21.048 29.2934L20.7893 29.3014C19.8166 29.3251 18.8436 29.3353 17.8707 29.332L16.876 29.3334H15.1307C14.1577 29.3366 13.1847 29.3264 12.212 29.3027L11.9533 29.2947C11.6368 29.2832 11.3204 29.2699 11.004 29.2547C9.58533 29.188 8.61733 28.9614 7.76666 28.6334C6.87691 28.2991 6.07098 27.7745 5.40533 27.096C4.72672 26.4297 4.20163 25.6234 3.86666 24.7334C3.53733 23.884 3.31333 22.916 3.24666 21.4974C3.23181 21.181 3.21848 20.8645 3.20666 20.548L3.2 20.2894C3.17541 19.3167 3.1643 18.3437 3.16666 17.3707V14.6294C3.16294 13.6568 3.17272 12.6843 3.196 11.712L3.20533 11.4534C3.216 11.1547 3.22933 10.8587 3.24533 10.504C3.312 9.08402 3.536 8.11736 3.86533 7.26669C4.20049 6.37685 4.72661 5.57128 5.40666 4.90669C6.07186 4.22769 6.87728 3.70212 7.76666 3.36669C8.61733 3.03736 9.584 2.81336 11.004 2.74669L11.9533 2.70669L12.212 2.70002C13.1842 2.67545 14.1568 2.66434 15.1293 2.66669L17.8707 2.66802ZM16.5 9.33469C15.6167 9.3222 14.7397 9.48539 13.92 9.81478C13.1003 10.1442 12.3542 10.6332 11.7251 11.2534C11.0961 11.8737 10.5965 12.6127 10.2556 13.4277C9.91463 14.2427 9.73905 15.1173 9.73905 16.0007C9.73905 16.8841 9.91463 17.7587 10.2556 18.5737C10.5965 19.3886 11.0961 20.1277 11.7251 20.7479C12.3542 21.3682 13.1003 21.8572 13.92 22.1866C14.7397 22.516 15.6167 22.6792 16.5 22.6667C18.2681 22.6667 19.9638 21.9643 21.214 20.7141C22.4643 19.4638 23.1667 17.7681 23.1667 16C23.1667 14.2319 22.4643 12.5362 21.214 11.286C19.9638 10.0357 18.2681 9.33469 16.5 9.33469ZM16.5 12.0014C17.0313 11.9916 17.5593 12.0878 18.0531 12.2843C18.5468 12.4808 18.9964 12.7738 19.3757 13.1461C19.755 13.5184 20.0562 13.9625 20.2619 14.4525C20.4676 14.9425 20.5736 15.4686 20.5737 16C20.5738 16.5314 20.468 17.0576 20.2624 17.5476C20.0569 18.0377 19.7558 18.4819 19.3767 18.8543C18.9975 19.2267 18.548 19.5198 18.0543 19.7166C17.5606 19.9133 17.0327 20.0096 16.5013 20C15.4405 20 14.423 19.5786 13.6729 18.8284C12.9228 18.0783 12.5013 17.0609 12.5013 16C12.5013 14.9392 12.9228 13.9217 13.6729 13.1716C14.423 12.4214 15.4405 12 16.5013 12L16.5 12.0014ZM23.5 7.33469C23.0699 7.3519 22.6631 7.53489 22.3648 7.84532C22.0666 8.15575 21.9 8.56953 21.9 9.00002C21.9 9.43051 22.0666 9.8443 22.3648 10.1547C22.6631 10.4652 23.0699 10.6481 23.5 10.6654C23.942 10.6654 24.3659 10.4898 24.6785 10.1772C24.9911 9.86464 25.1667 9.44072 25.1667 8.99869C25.1667 8.55666 24.9911 8.13274 24.6785 7.82018C24.3659 7.50762 23.942 7.33202 23.5 7.33202V7.33469Z"
+													fill="currentColor"
+												/>
+											</g>
+										</svg>
+									</a>
+								</li>
+								<li>
+									<a href="https://ca.linkedin.com/in/landynquigley">
+										<svg
+											width="33"
+											height="32"
+											viewBox="0 0 33 32"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+											class="hover:text-primary-3"
+										>
+											<g id="Linkedin">
+												<path
+													id="Vector"
+													d="M3 4.86225C3 3.83363 3.85475 3 4.90937 3H27.0906C28.1453 3 29 3.83363 29 4.86225V27.1378C29 28.1664 28.1453 29 27.0906 29H4.90937C3.85475 29 3 28.1664 3 27.1378V4.86225ZM11.0324 24.7652V13.0246H7.13075V24.7652H11.0324ZM9.08238 11.4208C10.4425 11.4208 11.2891 10.5205 11.2891 9.39275C11.2647 8.24062 10.4441 7.36475 9.10838 7.36475C7.77262 7.36475 6.9 8.24225 6.9 9.39275C6.9 10.5205 7.74662 11.4208 9.05638 11.4208H9.08238ZM17.0579 24.7652V18.2084C17.0579 17.8574 17.0839 17.5064 17.1879 17.2561C17.469 16.5557 18.1109 15.8294 19.1899 15.8294C20.602 15.8294 21.1659 16.9051 21.1659 18.4846V24.7652H25.0675V18.0312C25.0675 14.4237 23.1435 12.7467 20.576 12.7467C18.5057 12.7467 17.5779 13.8842 17.0579 14.6854V14.726H17.0319C17.0405 14.7124 17.0492 14.6989 17.0579 14.6854V13.0246H13.1579C13.2066 14.1264 13.1579 24.7652 13.1579 24.7652H17.0579Z"
+													fill="currentColor"
+												/>
+											</g>
+										</svg>
+									</a>
+								</li>
+							</ul>
+							<button class="btn-book md:m-0">Book now</button>
+						</div>
+					</div>
 				</div>
 			</section>
 
@@ -395,9 +412,12 @@
 
 			<section
 				id="map"
-				class="pt-8 lg:mb-14"
+				class="md:mb-14"
 			>
-				<div class="lg:hidden">
+				<div class="wrapper">
+					<h2 class="uppercase font-extrabold text-2xl tracking-wider mb-6">google maps</h2>
+				</div>
+				<div class="md:hidden">
 					<iframe
 						width=""
 						height="250"
@@ -418,11 +438,11 @@
 		<!-------------------- FOOTER -------------------->
 
 		<footer class="px-6 py-6 bg-gradient-to-b text-white from-primary-1 to-primary-2">
-			<div class="py-4 flex flex-col lg:flex-row gap-10 items-center wrapper text-center">
-				<div class="hidden lg:block lg:basis-[33%]">
+			<div class="py-4 flex flex-col md:flex-row gap-10 items-center wrapper text-center">
+				<div class="hidden md:block md:basis-[33%]">
 					<iframe
 						width=""
-						height="250"
+						height="200"
 						frameborder=""
 						style="border: 0"
 						loading="lazy"
@@ -435,7 +455,7 @@
 					</iframe>
 				</div>
 
-				<div class="flex flex-col gap-6 items-center lg:items-start lg:mr-auto lg:text-left">
+				<div class="flex flex-col gap-6 items-center md:items-start md:mr-auto md:text-left md:self-start">
 					<a
 						href="./home.html"
 						class="flex justify-center items-center"
@@ -446,8 +466,9 @@
 							viewBox="0 0 844 84"
 							fill="#ffffff"
 							xmlns="http://www.w3.org/2000/svg"
-							class="text-light w-4/5 h-auto sm:w-48 md:w-64 lg:w-80 xl:w-96"
+							class="text-light w-96 h-auto"
 						>
+							<!-- sm:w-48 md:w-64 lg:w-80 xl:w-96 -->
 							<g clip-path="url(#clip0_649_1302)">
 								<path
 									d="M35.492 17.5272C32.5862 14.9136 28.7629 13.6068 24.022 13.6068H-0.0200195V19.667H21.5934C24.3794 19.667 26.572 20.0344 28.1712 20.7693C31.0802 22.1426 32.5331 24.7412 32.5298 28.5652C32.5298 31.9669 31.519 34.3412 29.4977 35.6879C27.4763 37.0346 24.8415 37.708 21.5934 37.708H-0.0200195V65.6697H7.20605V43.6634H23.9921C29.368 43.6634 33.3576 42.1571 35.9608 39.1445C38.5244 36.2092 39.9086 32.4273 39.8456 28.5304C39.8655 23.7919 38.4143 20.1242 35.492 17.5272Z"
@@ -582,9 +603,12 @@
 						</svg>
 					</a>
 					<p class="w-1/2">1156 St Clair Ave W, York, ON M6E 1B3</p>
-					<button class="btn-book lg:m-0">
-						<a href="https://physiothenix.embodiaapp.com/patient_portal/online_bookings/609?practitioner_view_id=45859">Book now</a>
-					</button>
+
+					<a
+						class="btn-book md:m-0"
+						href="https://physiothenix.embodiaapp.com/patient_portal/online_bookings/609?practitioner_view_id=45859"
+						>Book now</a
+					>
 				</div>
 				<div class="flex flex-col lg:gap-4">
 					<p class="uppercase text-lg font-bold">connect with us</p>

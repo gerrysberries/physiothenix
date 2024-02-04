@@ -25,28 +25,28 @@
 			id="header"
 			class=""
 		>
-			<nav class="w-full px-6 py-3 flex items-center justify-between text-light bg-gradient-to-b from-primary-2 to-primary-1 fixed z-10">
+			<nav class="w-full px-6 py-3 flex items-center justify-between text-light bg-gradient-to-b from-primary-2 to-primary-1 fixed top-0 z-10 h-[70px]">
 				<!-- Logo -->
 				<a
 					href="./home.html"
-					class="w-[50vw]"
+					class=""
 				>
-					<!-- <svg
-						width="844"
-						height="84"
-						viewBox="0 0 844 84"
-						fill="#ffffff"
-						xmlns="http://www.w3.org/2000/svg"
-						class="text-light w-32 h-8 sm:w-48 sm:h-12 md:w-60 md:h-16"
-					> -->
 					<svg
 						width="844"
 						height="84"
 						viewBox="0 0 844 84"
 						fill="#ffffff"
 						xmlns="http://www.w3.org/2000/svg"
-						class="text-light w-fit h-auto md:max-w-96"
+						class="text-light logo-size h-auto"
 					>
+						<!-- <svg
+						width="844"
+						height="84"
+						viewBox="0 0 844 84"
+						fill="#ffffff"
+						xmlns="http://www.w3.org/2000/svg"
+						class="text-light w-fit h-auto sm:max-w-96"
+					> -->
 						<g clip-path="url(#clip0_649_1302)">
 							<path
 								d="M35.492 17.5272C32.5862 14.9136 28.7629 13.6068 24.022 13.6068H-0.0200195V19.667H21.5934C24.3794 19.667 26.572 20.0344 28.1712 20.7693C31.0802 22.1426 32.5331 24.7412 32.5298 28.5652C32.5298 31.9669 31.519 34.3412 29.4977 35.6879C27.4763 37.0346 24.8415 37.708 21.5934 37.708H-0.0200195V65.6697H7.20605V43.6634H23.9921C29.368 43.6634 33.3576 42.1571 35.9608 39.1445C38.5244 36.2092 39.9086 32.4273 39.8456 28.5304C39.8655 23.7919 38.4143 20.1242 35.492 17.5272Z"
@@ -184,18 +184,18 @@
 				<!-- Menu for larger screens -->
 				<ul
 					id="menu"
-					class="hide flex lg:flex-row lg:bg-none flex-col items-center gap-8 absolute left-0 bg-gradient-to-b from-primary-1 to-primary-2 w-full min-h-[60vh] lg:static lg:min-h-fit lg:w-auto top-[49px] justify-center lg:menu-desktop uppercase text-2xl lg:text-base"
+					class="hide flex md:flex-row md:bg-none flex-col items-center gap-8 absolute left-0 bg-gradient-to-b from-primary-1 to-primary-2 w-full min-h-[60vh] md:static md:min-h-fit md:w-auto top-[49px] justify-center md:menu-desktop uppercase text-2xl md:text-base"
 				>
 					<li>
 						<a
-							class="font-bold"
+							class="font-extrabold"
 							href="./home.html"
 							>Home</a
 						>
 					</li>
 					<li>
 						<a
-							class="font-extrabold"
+							class="font-bold"
 							href="./about.html"
 							>About</a
 						>
@@ -215,8 +215,15 @@
 						>
 					</li>
 					<li>
-						<a href="https://physiothenix.embodiaapp.com/patient_portal/online_bookings/609?practitioner_view_id=45859"><button class="btn-book">Book now</button></a>
+						<a
+							class="btn-book text-center"
+							href="https://physiothenix.embodiaapp.com/patient_portal/online_bookings/609?practitioner_view_id=45859"
+							>Book now</a
+						>
 					</li>
+					<!-- <li>
+						<a href="https://physiothenix.embodiaapp.com/patient_portal/online_bookings/609?practitioner_view_id=45859"><button class="btn-book">Book now</button></a>
+					</li> -->
 				</ul>
 				<!-- <ul class="hidden sm:flex flex-col md:flex-row gap-4">
 					<li><a href="./home.html">Home</a></li>
@@ -233,7 +240,7 @@
 					viewBox="0 0 24 25"
 					fill="none"
 					xmlns="http://www.w3.org/2000/svg"
-					class="text-light lg:hidden basis-[50px] cursor-pointer"
+					class="text-light md:hidden basis-[50px] cursor-pointer"
 				>
 					<g id="menu-04">
 						<path
@@ -254,80 +261,113 @@
 
 			<section
 				id="about"
-				class="pt-16 text-center text-dark"
+				class="text-center text-dark pt-[70px] my-16"
 			>
 				<div class="wrapper">
-					<h1 class="text-2xl uppercase font-extrabold tracking-wider mb-2 mt-[60px]">physiothenix</h1>
+					<h1 class="text-2xl uppercase font-extrabold tracking-wider mb-2">physiothenix</h1>
 					<span class="font-bold tracking-wide">physio-thenix</span>
 					<p class="my-4">Behind every name lies a story. Physiothenix, a fusion of 'Physio' representing physical function and 'Thenix,' drawn from the Greek 'Thenos' meaning strength and calisthenics, my transformative pandemic hobby turned obsession. The emblem, the flower of life, symbolizes the intertwined building blocks of life's cycle, embodying the essence of Physiothenix.</p>
-					<p class="pb-16">At Physiothenix, our purpose is clear - to redefine your impossible by <span class="font-bold">building a functional</span> and <span class="font-bold">stronger</span> version of <span class="font-bold underline">YOU</span>.</p>
+					<p>At Physiothenix, our purpose is clear - to redefine your impossible by <span class="font-bold">building a functional</span> and <span class="font-bold">stronger</span> version of <span class="font-bold underline">YOU</span>.</p>
 				</div>
 			</section>
 
 			<!-------------------- GOALS -------------------->
 
+			<!-- <style>
+				#goals * {
+					outline: 1px solid red;
+				}
+			</style> -->
+
 			<section
 				id="goals"
-				class="py-16 text-white bg-gradient-to-t from-[#21174A] to-[#551863]"
+				class="pb-16 md:pb-0 text-white bg-gradient-to-t from-[#21174A] to-[#551863] md:flex md:flex-row-reverse"
 			>
-				<div class="wrapper">
-					<div>
-						<img
-							src="../src/assets/client.png"
-							alt="guy working out"
-						/>
+				<div class="w-full">
+					<img
+						class="max-h-[480px] w-full object-cover object-top md:max-h-[750px]"
+						src="../src/assets/client2.jpg"
+						alt="guy working out"
+					/>
+				</div>
+				<div class="wrapper md:pl-[5vw]">
+					<h2 class="text-center uppercase font-extrabold text-2xl mb-9 mt-16">We value helping you</h2>
+
+					<div class="flex flex-col gap-6">
+						<div>
+							<h3 class="font-bold uppercase">Reduce pain</h3>
+							<ul class="list-disc pl-5">
+								<li>Expert guidance in managing acute or persistent pain.</li>
+								<li>Evidence-based solutions tailored to your unique case.</li>
+							</ul>
+						</div>
+						<div>
+							<h3 class="font-bold uppercase">Facilitate Recovery</h3>
+							<ul class="list-disc pl-5">
+								<li>Holistic approaches to accelerate healing.</li>
+								<li>Equipping you with the tools and knowledge for optimal recovery.</li>
+							</ul>
+						</div>
+						<div>
+							<h3 class="font-bold uppercase">Restore function</h3>
+							<ul class="list-disc pl-5">
+								<li>Crafting personalized treatment plans to reclaim purpose.</li>
+								<li>Dedicated to getting you back to your preferred activities.</li>
+							</ul>
+						</div>
+						<div>
+							<h3 class="font-bold uppercase">Build capacity</h3>
+							<ul class="list-disc pl-5">
+								<li>Transformative strength training methods.</li>
+								<li>Building resilient muscles, connective tissues, and joints.</li>
+							</ul>
+						</div>
+						<div>
+							<h3 class="font-bold uppercase">Enhance performance</h3>
+							<ul class="list-disc pl-5">
+								<li>Elevating your physical prowess.</li>
+								<li>Achieve new skills, power, and strength.</li>
+							</ul>
+						</div>
+						<div>
+							<h3 class="font-bold uppercase">Focus on you</h3>
+							<ul class="list-disc pl-5">
+								<li>Whether a new physical endeavor or optimizing your lifestyle.</li>
+								<li>Your goal is our goal.</li>
+							</ul>
+						</div>
 					</div>
-					<h2 class="text-center uppercase font-extrabold text-2xl mb-9">We value helping you</h2>
-					<h3 class="font-bold uppercase mt-6">Reduce pain</h3>
-					<ul class="list-disc pl-5">
-						<li>Expert guidance in managing acute or persistent pain.</li>
-						<li>Evidence-based solutions tailored to your unique case.</li>
-					</ul>
-					<h3 class="font-bold uppercase mt-6">Facilitate Recovery</h3>
-					<ul class="list-disc pl-5">
-						<li>Holistic approaches to accelerate healing.</li>
-						<li>Equipping you with the tools and knowledge for optimal recovery.</li>
-					</ul>
-					<h3 class="font-bold uppercase mt-6">Restore function</h3>
-					<ul class="list-disc pl-5">
-						<li>Crafting personalized treatment plans to reclaim purpose.</li>
-						<li>Dedicated to getting you back to your preferred activities.</li>
-					</ul>
-					<h3 class="font-bold uppercase mt-6">Build capacity</h3>
-					<ul class="list-disc pl-5">
-						<li>Transformative strength training methods.</li>
-						<li>Building resilient muscles, connective tissues, and joints.</li>
-					</ul>
-					<h3 class="font-bold uppercase mt-6">Enhance performance</h3>
-					<ul class="list-disc pl-5">
-						<li>Elevating your physical prowess.</li>
-						<li>Achieve new skills, power, and strength.</li>
-					</ul>
-					<h3 class="font-bold uppercase mt-6">Focus on you</h3>
-					<ul class="list-disc pl-5">
-						<li>Whether a new physical endeavor or optimizing your lifestyle.</li>
-						<li>Your goal is our goal.</li>
-					</ul>
 				</div>
 			</section>
 
 			<!-------------------- FOUNDER -------------------->
+
+			<!-- <style>
+				#founder * {
+					outline: 1px solid red;
+				}
+			</style> -->
 
 			<section
 				id="founder"
 				class="bg-white text-dark my-16"
 			>
 				<div class="wrapper">
-					<img
-						src="../src/assets/landyn-portrait.png"
-						alt=""
-						class="rounded-full w-1/2 mx-auto mb-6"
-					/>
-					<h2 class="uppercase font-extrabold text-2xl tracking-wider mb-2">Landyn quigley</h2>
-					<p class="uppercase font-bold tracking-widest text-sm mb-6">Founder, Physical Therapist</p>
-
-					<p class="mb-4">I'm Landyn, the founder of Physiothenix and your dedicated coach. My journey in the realm of physical well-being began with a Bachelor of Science in Kinesiology and escalated to a Master of Fitness Science from York University. Fueling my passion, I furthered my education with a Master of Science in Physical Therapy from the University of Toronto.</p>
-					<p class="mb-4">I've had the privilege of working with diverse individuals, from the young to the young at heart, spanning from those facing critical health challenges to elite athletes. My mission? To forge a powerful therapeutic bond with each patient, guiding them towards personal triumphs and restoring the strength and confidence needed to relish their favourite activities.</p>
+					<div class="md:flex md:flex-row-reverse gap-4">
+						<div class="mx-auto w-1/2 md:max-w-[280px]">
+							<img
+								src="../src/assets/landyn-portrait.png"
+								alt=""
+								class="rounded-full w-full mx-auto mb-6"
+							/>
+						</div>
+						<div class="">
+							<h2 class="uppercase font-extrabold text-2xl tracking-wider mb-2">Landyn quigley</h2>
+							<p class="uppercase font-bold tracking-widest text-sm mb-6">Founder, Physical Therapist</p>
+							<p class="mb-4">I'm Landyn, the founder of Physiothenix and your dedicated coach. My journey in the realm of physical well-being began with a Bachelor of Science in Kinesiology and escalated to a Master of Fitness Science from York University. Fueling my passion, I furthered my education with a Master of Science in Physical Therapy from the University of Toronto.</p>
+							<p class="mb-4">I've had the privilege of working with diverse individuals, from the young to the young at heart, spanning from those facing critical health challenges to elite athletes. My mission? To forge a powerful therapeutic bond with each patient, guiding them towards personal triumphs and restoring the strength and confidence needed to relish their favourite activities.</p>
+						</div>
+					</div>
 					<p class="mb-4">Recognizing the intricate nature of health, injury, and pain, I adopt a holistic approach to assessment and treatment. I'm a firm believer in the mantra "movement is medicine," empowering you to actively participate in your physical therapy journey. My methodology combines exercise, patient education, and lifestyle coaching, complemented by manual therapy techniques.</p>
 					<p class="mb-8">Beyond the clinic, catch me conquering calisthenics, mastering strength training, indulging in martial arts, and dancing up a storm at the local studio.</p>
 
@@ -350,9 +390,9 @@
 
 			<section
 				id="map"
-				class="pt-8 lg:mb-14"
+				class="md:mb-14"
 			>
-				<div class="lg:hidden">
+				<div class="md:hidden">
 					<iframe
 						width=""
 						height="250"
@@ -372,11 +412,11 @@
 		<!-------------------- FOOTER -------------------->
 
 		<footer class="px-6 py-6 bg-gradient-to-b text-white from-primary-1 to-primary-2">
-			<div class="py-4 flex flex-col lg:flex-row gap-10 items-center wrapper text-center">
-				<div class="hidden lg:block lg:basis-[33%]">
+			<div class="py-4 flex flex-col md:flex-row gap-10 items-center wrapper text-center">
+				<div class="hidden md:block md:basis-[33%]">
 					<iframe
 						width=""
-						height="250"
+						height="200"
 						frameborder=""
 						style="border: 0"
 						loading="lazy"
@@ -389,7 +429,7 @@
 					</iframe>
 				</div>
 
-				<div class="flex flex-col gap-6 items-center lg:items-start lg:mr-auto lg:text-left">
+				<div class="flex flex-col gap-6 items-center md:items-start md:mr-auto md:text-left md:self-start">
 					<a
 						href="./home.html"
 						class="flex justify-center items-center"
@@ -400,8 +440,9 @@
 							viewBox="0 0 844 84"
 							fill="#ffffff"
 							xmlns="http://www.w3.org/2000/svg"
-							class="text-light w-4/5 h-auto sm:w-48 md:w-64 lg:w-80 xl:w-96"
+							class="text-light w-96 h-auto"
 						>
+							<!-- sm:w-48 md:w-64 lg:w-80 xl:w-96 -->
 							<g clip-path="url(#clip0_649_1302)">
 								<path
 									d="M35.492 17.5272C32.5862 14.9136 28.7629 13.6068 24.022 13.6068H-0.0200195V19.667H21.5934C24.3794 19.667 26.572 20.0344 28.1712 20.7693C31.0802 22.1426 32.5331 24.7412 32.5298 28.5652C32.5298 31.9669 31.519 34.3412 29.4977 35.6879C27.4763 37.0346 24.8415 37.708 21.5934 37.708H-0.0200195V65.6697H7.20605V43.6634H23.9921C29.368 43.6634 33.3576 42.1571 35.9608 39.1445C38.5244 36.2092 39.9086 32.4273 39.8456 28.5304C39.8655 23.7919 38.4143 20.1242 35.492 17.5272Z"
@@ -536,9 +577,12 @@
 						</svg>
 					</a>
 					<p class="w-1/2">1156 St Clair Ave W, York, ON M6E 1B3</p>
-					<button class="btn-book lg:m-0">
-						<a href="https://physiothenix.embodiaapp.com/patient_portal/online_bookings/609?practitioner_view_id=45859">Book now</a>
-					</button>
+
+					<a
+						class="btn-book md:m-0"
+						href="https://physiothenix.embodiaapp.com/patient_portal/online_bookings/609?practitioner_view_id=45859"
+						>Book now</a
+					>
 				</div>
 				<div class="flex flex-col lg:gap-4">
 					<p class="uppercase text-lg font-bold">connect with us</p>
