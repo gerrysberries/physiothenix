@@ -35,7 +35,7 @@ module.exports = {
 				light: '#F7F7F7',
 			},
 			backgroundImage: {
-				hero: "url('dist/assets/pullup.jpg')",
+				hero: "url('../src/assets/pullup.jpg')",
 				'home-card-1': "url('../src/assets/client.png')",
 				'home-card-2': "url('../src/assets/rings.jpg')",
 				'home-card-3': "url('../src/assets/stretch.jpg')",
