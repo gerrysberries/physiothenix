@@ -988,31 +988,31 @@ video {
 }
 
 .bg-home-card-1{
-  background-image: url('../src/assets/client.png');
+  background-image: url('/assets/client.png');
 }
 
 .bg-home-card-2{
-  background-image: url('../src/assets/rings.jpg');
+  background-image: url('/assets/rings.jpg');
 }
 
 .bg-home-card-3{
-  background-image: url('../src/assets/stretch.jpg');
+  background-image: url('/assets/stretch.jpg');
 }
 
 .bg-location-primary{
-  background-image: url('../src/assets/table.jpg');
+  background-image: url('/assets/table.jpg');
 }
 
 .bg-location-secondary{
-  background-image: url('../src/assets/gym.jpg');
+  background-image: url('/assets/gym.jpg');
 }
 
 .bg-services-primary{
-  background-image: url('../src/assets/rings.jpg');
+  background-image: url('/assets/rings.jpg');
 }
 
 .bg-services-secondary{
-  background-image: url('../src/assets/stretch.jpg');
+  background-image: url('/assets/stretch.jpg');
 }
 
 .from-\[\#21174A\]{
