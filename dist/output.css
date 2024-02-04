@@ -984,7 +984,7 @@ video {
 }
 
 .bg-hero{
-  background-image: url('../src/assets/pullup.jpg');
+  background-image: url('dist/assets/pullup.jpg');
 }
 
 .bg-home-card-1{
