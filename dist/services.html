@@ -20,11 +20,11 @@
 			id="header"
 			class=""
 		>
-			<nav class="w-full px-6 py-3 flex items-center justify-between text-light bg-gradient-to-b from-primary-2 to-primary-1 fixed z-10 h-[70px] top-0">
+			<nav class="w-full px-[10vw] py-3 flex items-center justify-between text-light bg-gradient-to-b from-primary-2 to-primary-1 fixed top-0 z-10 h-[70px]">
 				<!-- Logo -->
 				<a
 					href="./home.html"
-					class=""
+					class="mr-auto"
 				>
 					<svg
 						width="844"
@@ -179,7 +179,7 @@
 				<!-- Menu for larger screens -->
 				<ul
 					id="menu"
-					class="hide flex md:flex-row md:bg-none flex-col items-center gap-8 absolute left-0 bg-gradient-to-b from-primary-1 to-primary-2 w-full min-h-[60vh] md:static md:min-h-fit md:w-auto top-[49px] justify-center md:menu-desktop uppercase text-2xl md:text-base"
+					class="hide flex md:flex-row md:bg-none flex-col items-center gap-8 absolute left-0 bg-gradient-to-b from-primary-1 to-primary-2 w-full min-h-[60vh] md:static md:min-h-fit md:w-auto top-[70px] justify-center md:menu-desktop uppercase text-2xl md:text-base"
 				>
 					<li>
 						<a
@@ -235,7 +235,7 @@
 					viewBox="0 0 24 25"
 					fill="none"
 					xmlns="http://www.w3.org/2000/svg"
-					class="text-light md:hidden basis-[50px] cursor-pointer"
+					class="text-light md:hidden cursor-pointer"
 				>
 					<g id="menu-04">
 						<path
@@ -268,11 +268,11 @@
 
 			<!-------------------- SERVICES -------------------->
 
-			<style>
+			<!-- <style>
 				#services * {
 					outline: 1px solid red;
 				}
-			</style>
+			</style> -->
 
 			<section
 				id="services"
@@ -283,22 +283,8 @@
 					<p class="mb-16 md:w-[650px] mx-auto">We provide you with a comprehensive assessment to identify the contributors, as well as solutions to your injury and/or pain, through a collaborative effort. Our service is centred around you, meaning we create treatments and plans of care on your specific needs and goals. We consistently follow best practices, striving to deliver highest quality care to achieve the best possible results. Our aim is to assist you in restoring strength, functionality, mobility, ultimately leading to an improved quality of life.</p>
 
 					<div class="md:flex md:bg-light">
-						<div class="flex flex-col gap-12 md:flex-1">
-							<div class="flex text-left justify-around items-center md:hidden">
-								<img
-									src="../src/assets/checklist.png"
-									alt=""
-									class="h-[100px] w-[100px]"
-								/>
-								<div class="basis-3/5">
-									<h3 class="mb-1 font-bold tracking-wide">Physiotherapy</h3>
-									<ul class="list-disc pl-5">
-										<li class="mb-1">Comprehensive assessment and personalized treatment plans</li>
-										<li>Goal-oriented, patient-centric care for strength, function, and movement</li>
-									</ul>
-								</div>
-							</div>
-							<div class="md:flex md:flex-col md:gap-9">
+						<div class="flex flex-col gap-12 md:flex-1 justify-center">
+							<div class="flex flex-col gap-9">
 								<div class="flex text-left justify-around items-center">
 									<img
 										src="../src/assets/calendar.png"
@@ -307,7 +293,7 @@
 									/>
 									<div class="basis-3/5">
 										<h3 class="mb-1 font-bold tracking-wide">Physiotherapy Assessment</h3>
-										<ul class="list-disc pl-5">
+										<ul class="list-disc pl-5 md:flex md:flex-col">
 											<li class="mb-1">Your first step towards transformation</li>
 											<li class="mb-1">A 60-minute deep dive into your history, physical exam, and tailored plan</li>
 											<li class="mb-1">A physical exam involving assessing tissue health, mobility, strength and/or performance</li>
@@ -331,33 +317,6 @@
 										</ul>
 									</div>
 								</div>
-								<!-- <div class="flex text-left justify-around items-center md:hidden">
-									<img
-										src="../src/assets/exercise.png"
-										alt=""
-										class="h-[100px] w-[100px]"
-									/>
-									<div class="basis-3/5">
-										<h3 class="mb-1 font-bold tracking-wide">Exercise</h3>
-										<ul class="list-disc pl-5">
-											<li class="mb-1">Foundation of treatment plans</li>
-											<li>Enjoyable and meaningful exercises for your unique needs</li>
-										</ul>
-									</div>
-								</div> -->
-								<!-- <div class="flex text-left justify-around items-center md:hidden">
-									<img
-										src="../src/assets/MT.png"
-										alt=""
-										class="h-[100px] w-[100px]"
-									/>
-									<div class="basis-3/5">
-										<h3 class="mb-1 font-bold tracking-wide">Manual Therapy</h3>
-										<ul class="list-disc pl-5">
-											<li>Hands-on techniques for joint mobility and muscle tension reduction</li>
-										</ul>
-									</div>
-								</div> -->
 								<div class="flex text-left justify-around items-center">
 									<img
 										src="../src/assets/virtual.png"
@@ -377,7 +336,7 @@
 						</div>
 						<div class="hidden md:block flex-1">
 							<img
-								class="md:block w-full object-cover"
+								class="md:block w-full object-cover md:max-h-[900px]"
 								src="../src/assets/stretch.jpg"
 								alt="female client stretching"
 							/>
@@ -397,11 +356,11 @@
 
 			<!-------------------- ONLINE COACHING -------------------->
 
-			<style>
+			<!-- <style>
 				#coaching * {
 					outline: 1px solid red;
 				}
-			</style>
+			</style> -->
 
 			<section
 				id="coaching"
@@ -414,13 +373,13 @@
 					<div class="md:flex md:bg-light justify-center items-center">
 						<div class="hidden md:block md:flex-1">
 							<img
-								class="md:block w-full object-cover"
+								class="md:block w-full object-cover max-h-[900px]"
 								src="../src/assets/client2.jpg"
 								alt="guy working out"
 							/>
 						</div>
-						<div class="md:flex-1 text-left flex flex-col gap-4 md:px-20">
-							<ul class="list-disc">
+						<div class="md:flex-1 text-left md:py-20">
+							<ul class="md:list-disc md:w-4/5 md:mx-auto flex flex-col gap-4">
 								<li><span class="font-bold">Support, Direction, Accountability:</span> Allow us to be your guiding force, providing unwavering support, precise direction, and unmatched accountability throughout your fitness journey.</li>
 								<li><span class="font-bold">Individualized Programming:</span> No one-size-fits-all approach here! Our coaching is tailored to your unique needs, considering factors like equipment accessibility, training history, and time commitment to streamline your journey.</li>
 								<li><span class="font-bold">Weekly Adjustments:</span> Your progress matters. Each week, we meticulously review your performance data and exercise videos, making real-time modifications to enhance your capacity, manage fatigue, and perfect your technique.</li>
@@ -428,8 +387,8 @@
 								<li><span class="font-bold">Unlimited 24/7 Support:</span> Your fitness goals don't adhere to a clock, and neither do we. Enjoy round-the-clock text support for any immediate questions or concerns related to your coaching.</li>
 								<li><span class="font-bold">Nutrition Guidance:</span> Health optimization goes beyond exercise. Our nutrition coach is here to guide you, ensuring your nutrition aligns with your health, performance, and body composition goals.</li>
 								<li><span class="font-bold">Virtual Physiotherapy by Landyn:</span> Worried about training with pain or injury? Fret not! Landyn, our registered physiotherapist, is here to conduct virtual assessments, devise personalized treatment plans, and make necessary modifications to keep you on the path to success.</li>
+								<li class="font-bold">Book your free consulting call today and let's sculpt the future you've been dreaming of!</li>
 							</ul>
-							<p class="font-bold">Book your free consulting call today and let's sculpt the future you've been dreaming of!</p>
 						</div>
 					</div>
 				</div>
@@ -444,7 +403,7 @@
 				<div class="wrapper">
 					<h2 class="text-dark uppercase font-extrabold text-2xl tracking-wider mb-6">Rates</h2>
 
-					<table class="bg-primary-2 table-auto border border-light-500 mx-auto">
+					<table class="bg-primary-2 table-auto border border-light-500 mx-auto md:w-full">
 						<thead class="border-b-2 border-light-200 bg-text">
 							<tr class="text-center uppercase font-bold tracking-widest">
 								<th class="">Type</th>
@@ -549,7 +508,7 @@
 							viewBox="0 0 844 84"
 							fill="#ffffff"
 							xmlns="http://www.w3.org/2000/svg"
-							class="text-light w-96 h-auto"
+							class="text-light logo-size-footer h-auto"
 						>
 							<!-- sm:w-48 md:w-64 lg:w-80 xl:w-96 -->
 							<g clip-path="url(#clip0_649_1302)">

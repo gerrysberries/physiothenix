@@ -20,11 +20,11 @@
 			id="header"
 			class=""
 		>
-			<nav class="w-full px-6 py-3 flex items-center justify-between text-light bg-gradient-to-b from-primary-2 to-primary-1 fixed z-10 h-[70px] top-0">
+			<nav class="w-full px-[5vw] lg:px-[10vw] py-3 flex items-center justify-between text-light bg-gradient-to-b from-primary-2 to-primary-1 fixed top-0 z-10 h-[70px]">
 				<!-- Logo -->
 				<a
 					href="./home.html"
-					class=""
+					class="mr-auto"
 				>
 					<svg
 						width="844"
@@ -34,14 +34,6 @@
 						xmlns="http://www.w3.org/2000/svg"
 						class="text-light logo-size h-auto"
 					>
-						<!-- <svg
-						width="844"
-						height="84"
-						viewBox="0 0 844 84"
-						fill="#ffffff"
-						xmlns="http://www.w3.org/2000/svg"
-						class="text-light w-fit h-auto sm:max-w-96"
-					> -->
 						<g clip-path="url(#clip0_649_1302)">
 							<path
 								d="M35.492 17.5272C32.5862 14.9136 28.7629 13.6068 24.022 13.6068H-0.0200195V19.667H21.5934C24.3794 19.667 26.572 20.0344 28.1712 20.7693C31.0802 22.1426 32.5331 24.7412 32.5298 28.5652C32.5298 31.9669 31.519 34.3412 29.4977 35.6879C27.4763 37.0346 24.8415 37.708 21.5934 37.708H-0.0200195V65.6697H7.20605V43.6634H23.9921C29.368 43.6634 33.3576 42.1571 35.9608 39.1445C38.5244 36.2092 39.9086 32.4273 39.8456 28.5304C39.8655 23.7919 38.4143 20.1242 35.492 17.5272Z"
@@ -179,7 +171,7 @@
 				<!-- Menu for larger screens -->
 				<ul
 					id="menu"
-					class="hide flex md:flex-row md:bg-none flex-col items-center gap-8 absolute left-0 bg-gradient-to-b from-primary-1 to-primary-2 w-full min-h-[60vh] md:static md:min-h-fit md:w-auto top-[49px] justify-center md:menu-desktop uppercase text-2xl md:text-base"
+					class="hide flex md:flex-row md:bg-none flex-col items-center gap-8 absolute left-0 bg-gradient-to-b from-primary-1 to-primary-2 w-full min-h-[60vh] md:static md:min-h-fit md:w-auto top-[70px] justify-center md:menu-desktop uppercase text-2xl md:text-base"
 				>
 					<li>
 						<a
@@ -235,7 +227,7 @@
 					viewBox="0 0 24 25"
 					fill="none"
 					xmlns="http://www.w3.org/2000/svg"
-					class="text-light md:hidden basis-[50px] cursor-pointer"
+					class="text-light md:hidden cursor-pointer"
 				>
 					<g id="menu-04">
 						<path
@@ -276,19 +268,19 @@
 
 			<section
 				id="services"
-				class="text-center md:text-left md:pt-[70px] my-16"
+				class="text-center md:text-left md:pt-[70px] my-16 md:text-xl"
 			>
 				<div class="wrapper">
-					<div class="md:flex md:gap-20">
+					<div class="md:flex md:gap-24">
 						<div class="flex-1">
 							<img
-								class="w-full hidden md:block aspect-square"
+								class="w-full hidden md:block aspect-square object-cover"
 								src="../src/assets/table.jpg"
 								alt=""
 							/>
 						</div>
 						<div class="flex-1 self-center md:flex md:flex-col md:items-start">
-							<h1 class="uppercase font-extrabold text-2xl tracking-wider mb-6">Physiothenix in Toronto</h1>
+							<h1 class="uppercase font-extrabold text-2xl md:text-[36px] tracking-wider md:leading-9 mb-6">Physiothenix in Toronto</h1>
 							<address class="not-italic flex flex-col gap-4 mb-8">
 								1156 St Clair Ave W, York, ON M6E 1B3
 								<div>
@@ -357,7 +349,7 @@
 
 			<section
 				id="secondary-banner"
-				class=""
+				class="md:hidden"
 			>
 				<div class="bg-primary bg-location-secondary bg-cover bg-center max-xl:py-40 xl:min-h-screen h-[40vh]">
 					<img
@@ -374,8 +366,19 @@
 				class="mb-16 py-16 bg-primary-1 text-light"
 			>
 				<div class="wrapper">
-					<h2 class="uppercase font-extrabold text-2xl tracking-wider mb-6">Shape Fitness</h2>
-					<p>Located on St. Clair Avenue, one block west of Dufferin Street, we pride ourselves in providing a safe space for all and judgement-free zone for you to be yourself and explore healthy living habits, both old and new. When you walk through the doors of Shape you will encounter a 17,000 square foot, renovated gym, offering all that you will need to start or continue your fitness journey, no matter your experience.</p>
+					<div class="md:flex md:gap-24">
+						<div class="flex-1 self-center">
+							<h2 class="uppercase font-extrabold text-2xl md:text-[32px] tracking-wider mb-6">Shape Fitness</h2>
+							<p>Located on St. Clair Avenue, one block west of Dufferin Street, we pride ourselves in providing a safe space for all and judgement-free zone for you to be yourself and explore healthy living habits, both old and new. When you walk through the doors of Shape you will encounter a 17,000 square foot, renovated gym, offering all that you will need to start or continue your fitness journey, no matter your experience.</p>
+						</div>
+						<div class="flex-1">
+							<img
+								class="w-full hidden md:block aspect-[3/2] object-cover"
+								src="../src/assets/gym.jpg"
+								alt=""
+							/>
+						</div>
+					</div>
 				</div>
 			</section>
 
@@ -387,22 +390,27 @@
 			>
 				<div class="wrapper">
 					<div class="flex flex-col gap-7">
-						<div>
-							<h2 class="text-center uppercase font-extrabold text-2xl tracking-wider mb-6">Directions</h2>
-							<h3 class="uppercase font-extrabold text-xl tracking-widest mb-2">Car</h3>
-							<p>From downtown Toronto, travel north on Avenue road then travel west on St Clair Ave W. Continue to 1156 St Clair Ave W. We are located on the north east side of St Clair Ave W, just before you reach Dufferin St.</p>
-						</div>
-						<div>
-							<h3 class="uppercase font-extrabold text-xl tracking-widest mb-2">ttc</h3>
-							<p>Take the Yonge-University subway north bound to St Clair West station. At St Clair W station take the 512 St Clair bus toward Keele. Get off at Dufferin St and walk 1 minute east to 1156 St Clair Ave W.</p>
-						</div>
-						<div class="flex flex-col gap-2">
-							<h3 class="uppercase font-extrabold text-xl tracking-widest mb-2">Parking</h3>
-							<h4 class="font-bold">Paid Parking:</h4>
-							<p>The Green parking area can be found at the northwest corner of St Clair and Dufferin.</p>
-							<p>Street parking spaces along St Clair, including directly in front of the gym spaces permitted</p>
-							<h4 class="font-bold">Free Parking:</h4>
-							<p>Free parking is available on nearby streets, including Northcliffe and Westmount</p>
+						<h2 class="text-center uppercase font-extrabold text-2xl md:text-[32px] tracking-wider mb-6">Directions</h2>
+
+						<div class="flex flex-col md:flex-row gap-7 md:gap-20">
+							<div class="flex flex-col gap-7 md:gap-10 md:flex-1">
+								<div>
+									<h3 class="uppercase font-extrabold text-xl md:text-[24px] tracking-widest mb-2">Car</h3>
+									<p>From downtown Toronto, travel north on Avenue road then travel west on St Clair Ave W. Continue to 1156 St Clair Ave W. We are located on the north east side of St Clair Ave W, just before you reach Dufferin St.</p>
+								</div>
+								<div>
+									<h3 class="uppercase font-extrabold text-xl md:text-[24px] tracking-widest mb-2">ttc</h3>
+									<p>Take the Yonge-University subway north bound to St Clair West station. At St Clair W station take the 512 St Clair bus toward Keele. Get off at Dufferin St and walk 1 minute east to 1156 St Clair Ave W.</p>
+								</div>
+							</div>
+							<div class="flex flex-col gap-2 md:flex-1 justify-between">
+								<h3 class="uppercase font-extrabold text-xl md:text-[24px] tracking-widest mb-2">Parking</h3>
+								<h4 class="font-bold">Paid Parking:</h4>
+								<p>The Green parking area can be found at the northwest corner of St Clair and Dufferin.</p>
+								<p>Street parking spaces along St Clair, including directly in front of the gym spaces permitted</p>
+								<h4 class="font-bold">Free Parking:</h4>
+								<p>Free parking is available on nearby streets, including Northcliffe and Westmount</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -415,34 +423,32 @@
 				class="md:mb-14"
 			>
 				<div class="wrapper">
-					<h2 class="uppercase font-extrabold text-2xl tracking-wider mb-6">google maps</h2>
+					<h2 class="uppercase font-extrabold text-2xl md:text-[32px] tracking-wider mb-6">google maps</h2>
 				</div>
-				<div class="md:hidden">
-					<iframe
-						width=""
-						height="250"
-						frameborder=""
-						style="border: 0"
-						loading="lazy"
-						allowfullscreen
-						referrerpolicy="no-referrer-when-downgrade"
-						src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCD_RCzo3wmn2BqeznmbP9plzWX4xbE3qE
-    &q=place_id:ChIJkRz5KHAzK4gRcCwil2IGT8o"
-						class="w-full"
-					>
-					</iframe>
-				</div>
+				<iframe
+					width=""
+					height=""
+					frameborder=""
+					style="border: 0"
+					loading="lazy"
+					allowfullscreen
+					referrerpolicy="no-referrer-when-downgrade"
+					src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCD_RCzo3wmn2BqeznmbP9plzWX4xbE3qE
+							&q=place_id:ChIJkRz5KHAzK4gRcCwil2IGT8o"
+					class="w-full md:w-[90%] md:mx-auto h-[200px] md:h-[429px] max-w-[80rem]"
+				>
+				</iframe>
 			</section>
 		</main>
 
 		<!-------------------- FOOTER -------------------->
 
-		<footer class="px-6 py-6 bg-gradient-to-b text-white from-primary-1 to-primary-2">
+		<footer class="px-6 md:px-0 py-6 bg-gradient-to-b text-white from-primary-1 to-primary-2">
 			<div class="py-4 flex flex-col md:flex-row gap-10 items-center wrapper text-center">
-				<div class="hidden md:block md:basis-[33%]">
+				<div class="hidden md:block">
 					<iframe
 						width=""
-						height="200"
+						height=""
 						frameborder=""
 						style="border: 0"
 						loading="lazy"
@@ -450,7 +456,7 @@
 						referrerpolicy="no-referrer-when-downgrade"
 						src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCD_RCzo3wmn2BqeznmbP9plzWX4xbE3qE
     &q=place_id:ChIJkRz5KHAzK4gRcCwil2IGT8o"
-						class="w-full"
+						class="md:h-[200px] md:w-[320px]"
 					>
 					</iframe>
 				</div>
@@ -466,7 +472,7 @@
 							viewBox="0 0 844 84"
 							fill="#ffffff"
 							xmlns="http://www.w3.org/2000/svg"
-							class="text-light w-96 h-auto"
+							class="text-light logo-size-footer h-auto"
 						>
 							<!-- sm:w-48 md:w-64 lg:w-80 xl:w-96 -->
 							<g clip-path="url(#clip0_649_1302)">
@@ -610,7 +616,7 @@
 						>Book now</a
 					>
 				</div>
-				<div class="flex flex-col lg:gap-4">
+				<div class="flex flex-col md:gap-4">
 					<p class="uppercase text-lg font-bold">connect with us</p>
 					<ul class="flex justify-center items-center gap-6 px-2">
 						<li>
