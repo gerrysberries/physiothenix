@@ -687,6 +687,11 @@ video {
   margin-bottom: 1rem;
 }
 
+.my-8{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .mb-1{
   margin-bottom: 0.25rem;
 }
@@ -801,6 +806,10 @@ video {
 
 .w-1\/2{
   width: 50%;
+}
+
+.w-2\/3{
+  width: 66.666667%;
 }
 
 .w-\[100px\]{
@@ -1491,10 +1500,6 @@ td{
     flex: 1 1 0%;
   }
 
-  .md\:basis-\[33\%\]{
-    flex-basis: 33%;
-  }
-
   .md\:list-disc{
     list-style-type: disc;
   }
@@ -1525,10 +1530,6 @@ td{
 
   .md\:gap-24{
     gap: 6rem;
-  }
-
-  .md\:gap-4{
-    gap: 1rem;
   }
 
   .md\:self-start{
@@ -1573,6 +1574,11 @@ td{
 
   .md\:text-left{
     text-align: left;
+  }
+
+  .md\:text-2xl{
+    font-size: 24px;
+    line-height: 32px;
   }
 
   .md\:text-\[24px\]{
@@ -1625,18 +1631,9 @@ td{
     width: 20rem;
   }
 
-  .lg\:gap-4{
-    gap: 1rem;
-  }
-
   .lg\:px-\[10vw\]{
     padding-left: 10vw;
     padding-right: 10vw;
-  }
-
-  .lg\:text-2xl{
-    font-size: 24px;
-    line-height: 32px;
   }
 
   .lg\:text-base{
