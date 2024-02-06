@@ -1135,16 +1135,17 @@ video {
   padding-bottom: 1.5rem;
 }
 
+.py-8{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .pb-16{
   padding-bottom: 4rem;
 }
 
 .pl-5{
   padding-left: 1.25rem;
-}
-
-.pt-16{
-  padding-top: 4rem;
 }
 
 .pt-9{
@@ -1577,6 +1578,11 @@ td{
     padding-bottom: 5rem;
   }
 
+  .md\:py-0{
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
   .md\:pb-0{
     padding-bottom: 0px;
   }
@@ -1587,6 +1593,10 @@ td{
 
   .md\:pl-\[5vw\]{
     padding-left: 5vw;
+  }
+
+  .md\:pt-16{
+    padding-top: 4rem;
   }
 
   .md\:pt-\[70px\]{
