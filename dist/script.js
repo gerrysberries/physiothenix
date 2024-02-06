@@ -34,9 +34,9 @@ fetch(`https://places.googleapis.com/v1/places/ChIJkRz5KHAzK4gRcCwil2IGT8o?field
 							<a class='text-dark font-extrabold' href=${review.authorAttribution.uri}>${review.authorAttribution.displayName}</a>
 							<a class='text-subtitle text-sm block' href="${review.authorAttribution.uri}">${review.relativePublishTimeDescription}</a>
 						</div>
-						<a class='ml-auto' href="${review.authorAttribution.uri}"><img width=30 height=30 src="../src/assets/google.png" alt="" /></a>
+						<a class='ml-auto' href="${review.authorAttribution.uri}"><img width=30 height=30 src="/assets/google.png" alt="" /></a>
 					</div>
-					<img width=150 class='my-2' src="../src/assets/stars.png" alt="" />
+					<img width=150 class='my-2' src="/assets/stars.png" alt="" />
 					<p class='mb-4'>
 						${review.originalText.text}
 					</p>
