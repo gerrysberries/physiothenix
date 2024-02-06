@@ -65,8 +65,8 @@ function setupCarousel() {
 		activateDot(curSlide);
 	};
 
-	btnRight.addEventListener('click', nextSlide);
-	btnLeft.addEventListener('click', prevSlide);
+	// btnRight.addEventListener('click', nextSlide);
+	// btnLeft.addEventListener('click', prevSlide);
 
 	document.addEventListener('keydown', e => {
 		if (e.key === 'ArrowLeft') prevSlide();
@@ -79,7 +79,9 @@ function setupCarousel() {
 			curSlide = Number(slide);
 			goToSlide(slide);
 			activateDot(slide);
+			console.log('click');
 		}
+		console.log('click');
 	});
 }
 
