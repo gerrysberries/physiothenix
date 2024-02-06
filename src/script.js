@@ -21,8 +21,8 @@ fetch(`https://places.googleapis.com/v1/places/ChIJkRz5KHAzK4gRcCwil2IGT8o?field
 	})
 	.then(data => {
 		data.reviews.forEach(review => {
-			let newLi = document.createElement('li');
-			newLi.innerHTML = `
+			let newLiHTML;
+			newLiHTML = `
 			<li class='slide absolute transition-transform duration-1000 flex flex-col mb-4 h-auto overflow-scroll justify-center items-center mt-4'>
 				<div class='wrapper'>
 					<div class='flex items-center'>
@@ -41,7 +41,8 @@ fetch(`https://places.googleapis.com/v1/places/ChIJkRz5KHAzK4gRcCwil2IGT8o?field
 				</div>
 			</li>
 			`;
-			reviewList.appendChild(newLi);
+			// reviewList.appendChild(newLi);
+			reviewList.insertAdjacentHTML('beforeend', newLiHTML);
 		});
 
 		const slides = document.querySelectorAll('.slide');

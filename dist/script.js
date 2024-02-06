@@ -20,9 +20,11 @@ fetch(`https://places.googleapis.com/v1/places/ChIJkRz5KHAzK4gRcCwil2IGT8o?field
 		return response.json(); // Parse the JSON response
 	})
 	.then(data => {
-		data.reviews.forEach(review => {
-			let newLi = document.createElement('li');
-			newLi.innerHTML = `
+		data.reviews
+			.filter(review => review.originalText.text.split(' ').length < 275)
+			.forEach(review => {
+				let newLiHTML;
+				newLiHTML = `
 			<li class='slide absolute transition-transform duration-1000 flex flex-col mb-4 h-auto overflow-scroll justify-center items-center mt-4'>
 				<div class='wrapper'>
 					<div class='flex items-center'>
@@ -31,9 +33,9 @@ fetch(`https://places.googleapis.com/v1/places/ChIJkRz5KHAzK4gRcCwil2IGT8o?field
 							<a class='text-dark font-extrabold' href=${review.authorAttribution.uri}>${review.authorAttribution.displayName}</a>
 							<a class='text-subtitle text-sm block' href="${review.authorAttribution.uri}">${review.relativePublishTimeDescription}</a>
 						</div>
-						<a class='ml-auto' href="${review.authorAttribution.uri}"><img width=30 height=30 src="/assets/google.png" alt="" /></a>
+						<a class='ml-auto' href="${review.authorAttribution.uri}"><img width=30 height=30 src="../src/assets/google.png" alt="" /></a>
 					</div>
-					<img width=150 class='my-2' src="/assets/stars.png" alt="" />
+					<img width=150 class='my-2' src="../src/assets/stars.png" alt="" />
 					<p class='mb-4'>
 						${review.originalText.text}
 					</p>
@@ -41,8 +43,9 @@ fetch(`https://places.googleapis.com/v1/places/ChIJkRz5KHAzK4gRcCwil2IGT8o?field
 				</div>
 			</li>
 			`;
-			reviewList.appendChild(newLi);
-		});
+				// reviewList.appendChild(newLi);
+				reviewList.insertAdjacentHTML('beforeend', newLiHTML);
+			});
 
 		const slides = document.querySelectorAll('.slide');
 		const btnLeft = document.querySelector('.slider-btn-left');

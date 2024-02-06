@@ -1009,7 +1009,7 @@ video {
 }
 
 .bg-location-primary{
-  background-image: url('/assets/table.jpg');
+  background-image: url('/assets/physiothenix-room.jpg');
 }
 
 .bg-location-secondary{
@@ -1265,16 +1265,16 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.underline{
-  text-decoration-line: underline;
-}
-
 .bg-blend-soft-light{
   background-blend-mode: soft-light;
 }
 
 .outline{
   outline-style: solid;
+}
+
+.filter{
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .transition-transform{

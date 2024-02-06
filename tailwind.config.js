@@ -41,7 +41,7 @@ module.exports = {
 				'home-card-3': "url('/assets/stretch.jpg')",
 				'services-primary': "url('/assets/rings.jpg')",
 				'services-secondary': "url('/assets/stretch.jpg')",
-				'location-primary': "url('/assets/table.jpg')",
+				'location-primary': "url('/assets/physiothenix-room.jpg')",
 				'location-secondary': "url('/assets/gym.jpg')",
 			},
 			screens: {
