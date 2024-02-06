@@ -16,14 +16,14 @@ function setupCarousel() {
 	const slides = document.querySelectorAll('.slide');
 	const btnLeft = document.querySelector('.slider-btn-left');
 	const btnRight = document.querySelector('.slider-btn-right');
-	const dotContainer = document.querySelector('.dots');
+	const dotContainer = document.querySelectorAll('.dots');
 
 	let curSlide = 0;
 	const maxSlide = slides.length;
 
 	const createDots = function () {
 		slides.forEach(function (_, i) {
-			dotContainer.insertAdjacentHTML('beforeend', `<button class='dot' data-slide='${i}'></button>`);
+			dotContainer.forEach(container => container.insertAdjacentHTML('beforeend', `<button class='dot' data-slide='${i}'></button>`));
 		});
 	};
 	createDots();
