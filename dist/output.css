@@ -1379,8 +1379,8 @@ td{
 }
 
 @media not all and (min-width: 1100px){
-  .max-md\:ml-\[5vw\]{
-    margin-left: 5vw;
+  .max-md\:ml-\[-5vw\]{
+    margin-left: -5vw;
   }
 
   .max-md\:w-screen{
