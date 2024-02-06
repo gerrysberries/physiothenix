@@ -1,6 +1,7 @@
 const menu = document.querySelector('#menu');
 const hamburger = document.querySelector('#hamburger-button');
 const reviewList = document.querySelector('#review-list');
+const gymImageList = document.querySelector('#gym-image-list');
 
 let innerHTML;
 
