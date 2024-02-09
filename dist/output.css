@@ -805,10 +805,6 @@ video {
   height: auto;
 }
 
-.h-full{
-  height: 100%;
-}
-
 .max-h-\[480px\]{
   max-height: 480px;
 }
@@ -1602,6 +1598,10 @@ td{
     background-image: none;
   }
 
+  .md\:p-9{
+    padding: 2.25rem;
+  }
+
   .md\:px-0{
     padding-left: 0px;
     padding-right: 0px;
@@ -1615,6 +1615,11 @@ td{
   .md\:py-20{
     padding-top: 5rem;
     padding-bottom: 5rem;
+  }
+
+  .md\:py-9{
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
   }
 
   .md\:pb-0{
