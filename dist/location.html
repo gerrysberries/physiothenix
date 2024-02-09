@@ -11,6 +11,10 @@
 			rel="stylesheet"
 			href="output.css"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+		/>
 	</head>
 
 	<body class="font-mulish">
@@ -21,7 +25,6 @@
 			class=""
 		>
 			<nav class="w-full px-[5vw] py-3 flex items-center justify-between text-light bg-gradient-to-b from-primary-2 to-primary-1 fixed top-0 z-10 h-[70px]">
-				<!-- Logo -->
 				<a
 					href="./index.html"
 					class="mr-auto"
@@ -168,7 +171,6 @@
 					</svg>
 				</a>
 
-				<!-- Menu for larger screens -->
 				<ul
 					id="menu"
 					class="hide flex md:flex-row md:bg-none flex-col items-center gap-8 absolute left-0 bg-gradient-to-b from-primary-1 to-primary-2 w-full min-h-[60vh] md:static md:min-h-fit md:w-auto top-[70px] justify-center md:menu-desktop uppercase text-2xl md:text-base"
@@ -208,19 +210,9 @@
 							>Book now</a
 						>
 					</li>
-					<!-- <li>
-						<a href="https://physiothenix.embodiaapp.com/patient_portal/online_bookings/609?practitioner_view_id=45859"><button class="btn-book">Book now</button></a>
-					</li> -->
 				</ul>
-				<!-- <ul class="hidden sm:flex flex-col md:flex-row gap-4">
-					<li><a href="./index.html">Home</a></li>
-					<li><a href="./about.html">About</a></li>
-					<li><a href="./services.html">Services</a></li>
-					<li><a href="./location.html">Location</a></li>
-				</ul> -->
 
-				<!-- Hamburger icon for smaller screens -->
-				<svg
+				<!-- <svg
 					id="hamburger-button"
 					width="24"
 					height="25"
@@ -239,7 +231,17 @@
 							stroke-linejoin="round"
 						/>
 					</g>
-				</svg>
+				</svg> -->
+
+				<span
+					id="hamburger-button"
+					class="text-light text-3xl cursor-pointer mx-2 md:hidden block"
+				>
+					<ion-icon
+						name="menu"
+						onclick="Menu(this)"
+					></ion-icon>
+				</span>
 			</nav>
 		</header>
 
@@ -483,54 +485,6 @@
 								id="gym-image-list"
 								class="aspect-[3/2]"
 							>
-								<!-- <li class="slide absolute transition-transform duration-1000 flex flex-col h-auto overflow-scroll justify-center items-center ">
-									<img
-										class="w-full"
-										src="/assets/physiothenix-room.jpg"
-										alt="physiothenix room"
-										loading="lazy"
-									/>
-								</li>
-								<li class="slide absolute transition-transform duration-1000 flex flex-col h-auto overflow-scroll justify-center items-center ">
-									<img
-										class="w-full"
-										src="/assets/physiothenix-room.jpg"
-										alt="physiothenix room"
-										loading="lazy"
-									/>
-								</li>
-								<li class="slide absolute transition-transform duration-1000 flex flex-col h-auto overflow-scroll justify-center items-center ">
-									<img
-										class="w-full"
-										src="/assets/physiothenix-room.jpg"
-										alt="physiothenix room"
-										loading="lazy"
-									/>
-								</li>
-								<li class="slide absolute transition-transform duration-1000 flex flex-col h-auto overflow-scroll justify-center items-center ">
-									<img
-										class="w-full"
-										src="/assets/physiothenix-room.jpg"
-										alt="physiothenix room"
-										loading="lazy"
-									/>
-								</li>
-								<li class="slide absolute transition-transform duration-1000 flex flex-col h-auto overflow-scroll justify-center items-center ">
-									<img
-										class="w-full"
-										src="/assets/physiothenix-room.jpg"
-										alt="physiothenix room"
-										loading="lazy"
-									/>
-								</li>
-								<li class="slide absolute transition-transform duration-1000 flex flex-col h-auto overflow-scroll justify-center items-center ">
-									<img
-										class="w-full"
-										src="/assets/physiothenix-room.jpg"
-										alt="physiothenix room"
-										loading="lazy"
-									/>
-								</li> -->
 								<li class="slide absolute transition-transform duration-1000 flex flex-col h-auto overflow-scroll justify-center items-center">
 									<img
 										class="w-full"
@@ -567,6 +521,54 @@
 									<img
 										class="w-full"
 										src="/assets/gym-4.jpg"
+										alt="physiothenix room"
+										loading="lazy"
+									/>
+								</li>
+								<li class="slide absolute transition-transform duration-1000 flex flex-col h-auto overflow-scroll justify-center items-center">
+									<img
+										class="w-full"
+										src="/assets/gym-5.jpg"
+										alt="physiothenix room"
+										loading="lazy"
+									/>
+								</li>
+								<li class="slide absolute transition-transform duration-1000 flex flex-col h-auto overflow-scroll justify-center items-center">
+									<img
+										class="w-full"
+										src="/assets/gym-6.jpg"
+										alt="physiothenix room"
+										loading="lazy"
+									/>
+								</li>
+								<li class="slide absolute transition-transform duration-1000 flex flex-col h-auto overflow-scroll justify-center items-center">
+									<img
+										class="w-full"
+										src="/assets/gym-7.jpg"
+										alt="physiothenix room"
+										loading="lazy"
+									/>
+								</li>
+								<li class="slide absolute transition-transform duration-1000 flex flex-col h-auto overflow-scroll justify-center items-center">
+									<img
+										class="w-full"
+										src="/assets/gym-8.jpg"
+										alt="physiothenix room"
+										loading="lazy"
+									/>
+								</li>
+								<li class="slide absolute transition-transform duration-1000 flex flex-col h-auto overflow-scroll justify-center items-center">
+									<img
+										class="w-full"
+										src="/assets/gym-9.jpg"
+										alt="physiothenix room"
+										loading="lazy"
+									/>
+								</li>
+								<li class="slide absolute transition-transform duration-1000 flex flex-col h-auto overflow-scroll justify-center items-center">
+									<img
+										class="w-full"
+										src="/assets/gym-10.jpg"
 										alt="physiothenix room"
 										loading="lazy"
 									/>
@@ -889,6 +891,14 @@
 		<script
 			defer
 			src="script.js"
+		></script>
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
 		></script>
 	</body>
 </html>

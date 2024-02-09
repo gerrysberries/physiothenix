@@ -829,11 +829,6 @@ video {
   width: 322px;
 }
 
-.w-fit{
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
 .w-full{
   width: 100%;
 }
@@ -1414,16 +1409,8 @@ td{
 }
 
 @media (min-width: 550px){
-  .sm\:flex{
-    display: flex;
-  }
-
   .sm\:w-48{
     width: 12rem;
-  }
-
-  .sm\:max-w-96{
-    max-width: 24rem;
   }
 
   .sm\:flex-row{
