@@ -654,10 +654,6 @@ video {
   top: 0px;
 }
 
-.top-\[-400px\]{
-  top: -400px;
-}
-
 .top-\[70px\]{
   top: 70px;
 }
@@ -666,12 +662,16 @@ video {
   top: 80px;
 }
 
-.z-10{
-  z-index: 10;
+.top-\[100px\]{
+  top: 100px;
 }
 
-.z-\[-1\]{
-  z-index: -1;
+.top-\[60px\]{
+  top: 60px;
+}
+
+.z-10{
+  z-index: 10;
 }
 
 .mx-2{
@@ -761,10 +761,6 @@ video {
   display: block;
 }
 
-.inline{
-  display: inline;
-}
-
 .flex{
   display: flex;
 }
@@ -783,10 +779,6 @@ video {
 
 .aspect-square{
   aspect-ratio: 1 / 1;
-}
-
-.h-10{
-  height: 2.5rem;
 }
 
 .h-\[100px\]{
@@ -831,6 +823,10 @@ video {
 
 .min-h-\[60vh\]{
   min-height: 60vh;
+}
+
+.min-h-\[100vh\]{
+  min-height: 100vh;
 }
 
 .w-1\/2{
@@ -1109,10 +1105,6 @@ video {
      object-position: top;
 }
 
-.p-5{
-  padding: 1.25rem;
-}
-
 .px-2{
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -1176,10 +1168,6 @@ video {
   padding-left: 1.25rem;
 }
 
-.pl-7{
-  padding-left: 1.75rem;
-}
-
 .pt-9{
   padding-top: 2.25rem;
 }
@@ -1194,10 +1182,6 @@ video {
 
 .text-center{
   text-align: center;
-}
-
-.font-\[Poppins\]{
-  font-family: Poppins;
 }
 
 .font-mulish{
@@ -1311,22 +1295,12 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.opacity-0{
-  opacity: 0;
-}
-
 .opacity-100{
   opacity: 1;
 }
 
 .bg-blend-soft-light{
   background-blend-mode: soft-light;
-}
-
-.shadow{
-  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .outline{
@@ -1337,12 +1311,6 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
-.transition-all{
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
 .transition-transform{
   transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1351,14 +1319,6 @@ video {
 
 .duration-1000{
   transition-duration: 1000ms;
-}
-
-.duration-500{
-  transition-duration: 500ms;
-}
-
-.ease-in{
-  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
 .wrapper{
@@ -1501,10 +1461,6 @@ td{
     position: static;
   }
 
-  .md\:z-auto{
-    z-index: auto;
-  }
-
   .md\:m-0{
     margin: 0px;
   }
@@ -1611,14 +1567,6 @@ td{
     align-items: flex-start;
   }
 
-  .md\:items-center{
-    align-items: center;
-  }
-
-  .md\:justify-between{
-    justify-content: space-between;
-  }
-
   .md\:gap-10{
     gap: 2.5rem;
   }
@@ -1672,10 +1620,6 @@ td{
     padding-bottom: 4rem;
   }
 
-  .md\:pl-0{
-    padding-left: 0px;
-  }
-
   .md\:pl-\[5vw\]{
     padding-left: 5vw;
   }
@@ -1721,10 +1665,6 @@ td{
 
   .md\:leading-9{
     line-height: 2.25rem;
-  }
-
-  .md\:opacity-100{
-    opacity: 1;
   }
 
   .md\:wrapper{
