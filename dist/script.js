@@ -6,6 +6,7 @@ const gymImageList = document.querySelector('#gym-image-list');
 let innerHTML;
 
 hamburger.addEventListener('click', e => {
+	console.log(e);
 	menu.classList.toggle('hide');
 });
 
@@ -196,3 +197,8 @@ fetch(`https://places.googleapis.com/v1/places/ChIJkRz5KHAzK4gRcCwil2IGT8o?field
 	});
 
 setupCarousel();
+
+function Menu(e) {
+	let list = document.querySelector('ul');
+	e.name === 'menu' ? ((e.name = 'close'), list.classList.add('top-[80px]'), list.classList.add('opacity-100')) : ((e.name = 'menu'), list.classList.remove('top-[80px]'), list.classList.remove('opacity-100'));
+}
