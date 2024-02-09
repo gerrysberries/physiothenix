@@ -22,6 +22,32 @@ td {
 	/* text-align: center; */
 }
 
+.slider-btn {
+	position: absolute;
+	top: 50%;
+	z-index: 10;
+
+	border: none;
+	background: rgba(255, 255, 255, 0.7);
+	font-family: inherit;
+	color: #333;
+	border-radius: 50%;
+	height: 2rem;
+	width: 2rem;
+	/* font-size: 3.25rem; */
+	cursor: pointer;
+}
+
+.slider-btn-left {
+	left: 6%;
+	transform: translate(-50%, -50%);
+}
+
+.slider-btn-right {
+	right: 6%;
+	transform: translate(50%, -50%);
+}
+
 @layer components {
 	.btn-more {
 		@apply py-[15px] px-[23px] mx-auto flex flex-col justify-center items-center rounded-md uppercase text-white bg-primary-3 tracking-[1.4px] font-extrabold text-[14px] hover:cursor-pointer;
