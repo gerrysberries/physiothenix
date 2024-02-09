@@ -17,7 +17,7 @@ function setupCarousel() {
 	const slides = document.querySelectorAll('.slide');
 	const btnLeft = document.querySelector('.slider-btn-left');
 	const btnRight = document.querySelector('.slider-btn-right');
-	const dotContainer = document.querySelector('.dots');
+	const dotContainer = document.querySelector('.dots') || undefined;
 
 	let curSlide = 0;
 	const maxSlide = slides.length;
@@ -27,13 +27,14 @@ function setupCarousel() {
 			slides.forEach(function (_, i) {
 				dotContainer.insertAdjacentHTML('beforeend', `<button class='dot' data-slide='${i}'></button>`);
 			});
+		return;
 	};
 	createDots();
 
 	const activateDot = function (slide) {
-		document.querySelectorAll('.dot').forEach(dot => dot.classList.remove('dot-active'));
+		dotContainer && document.querySelectorAll('.dot').forEach(dot => dot.classList.remove('dot-active'));
 
-		document.querySelector(`.dot[data-slide='${slide}']`).classList.add('dot-active');
+		dotContainer && document.querySelector(`.dot[data-slide='${slide}']`).classList.add('dot-active');
 	};
 
 	const goToSlide = function (slide) {
