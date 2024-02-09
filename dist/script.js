@@ -23,9 +23,10 @@ function setupCarousel() {
 	const maxSlide = slides.length;
 
 	const createDots = function () {
-		slides.forEach(function (_, i) {
-			dotContainer.insertAdjacentHTML('beforeend', `<button class='dot' data-slide='${i}'></button>`);
-		});
+		dotContainer &&
+			slides.forEach(function (_, i) {
+				dotContainer.insertAdjacentHTML('beforeend', `<button class='dot' data-slide='${i}'></button>`);
+			});
 	};
 	createDots();
 
@@ -63,7 +64,7 @@ function setupCarousel() {
 		}
 
 		goToSlide(curSlide);
-		activateDot(curSlide);
+		dotContainer && activateDot(curSlide);
 	};
 
 	btnRight.addEventListener('click', nextSlide);
