@@ -102,7 +102,7 @@ fetch(`https://places.googleapis.com/v1/places/ChIJkRz5KHAzK4gRcCwil2IGT8o?field
 			.forEach(review => {
 				let newLiHTML;
 				newLiHTML = `
-			<li class='slide absolute transition-transform duration-1000 flex flex-col mb-4 h-auto overflow-scroll justify-center items-center mt-4'>
+			<li class='slide absolute transition-transform duration-1000 flex flex-col mb-4 h-auto overflow-scroll justify-center items-center mt-4 '>
 				<div class='wrapper'>
 					<div class='flex items-center'>
 						<a class='mr-4' href="${review.authorAttribution.uri}"><img width=50 height=50 src=${review.authorAttribution.photoUri} alt="user-icon" /></a>

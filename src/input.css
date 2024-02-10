@@ -48,6 +48,10 @@ td {
 	transform: translate(50%, -50%);
 }
 
+.slide::-webkit-scrollbar {
+	display: none;
+}
+
 @layer components {
 	.btn-more {
 		@apply py-[15px] px-[23px] mx-auto flex flex-col justify-center items-center rounded-md uppercase text-white bg-primary-3 tracking-[1.4px] font-extrabold text-[14px] hover:cursor-pointer;
