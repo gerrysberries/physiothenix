@@ -801,10 +801,6 @@ video {
   height: 460px;
 }
 
-.h-\[50rem\]{
-  height: 50rem;
-}
-
 .h-\[70px\]{
   height: 70px;
 }
@@ -1479,10 +1475,6 @@ td{
     position: static;
   }
 
-  .md\:bottom-\[2\.25\%\]{
-    bottom: 2.25%;
-  }
-
   .md\:bottom-\[2\.5\%\]{
     bottom: 2.5%;
   }
@@ -1520,12 +1512,12 @@ td{
     height: 200px;
   }
 
-  .md\:h-\[429px\]{
-    height: 429px;
-  }
-
   .md\:h-\[25rem\]{
     height: 25rem;
+  }
+
+  .md\:h-\[429px\]{
+    height: 429px;
   }
 
   .md\:max-h-\[750px\]{
