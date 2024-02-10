@@ -375,11 +375,59 @@
 					<h3 class="uppercase text-2xl font-extrabold mb-4">Reviews</h3>
 					<ul
 						id="review-list"
-						class="bg-white text-dark relative h-[50rem] rounded-xl overflow-hidden"
-					></ul>
-					<button class="slider-btn slider-btn-left">←</button>
-					<button class="slider-btn slider-btn-right">→</button>
-					<div class="dots absolute bottom-[1.4%] left-1/2 -translate-x-1/2 flex justify-center"></div>
+						class="bg-white text-dark relative max-sm:h-[55rem] sm:h-[37rem] md:h-[25rem] lg:h-[22rem] rounded-xl overflow-hidden"
+					>
+						<button class="slider-btn slider-btn-left relative flex justify-center items-center">
+							<svg
+								class="absolute left-1"
+								width="20"
+								height="20"
+								xmlns="http://www.w3.org/2000/svg"
+								class="ionicon"
+								viewBox="0 0 512 512"
+							>
+								<path d="M368 64L144 256l224 192V64z" />
+							</svg>
+						</button>
+						<button class="slider-btn slider-btn-right relative flex justify-center items-center">
+							<svg
+								class="absolute right-1"
+								width="20"
+								height="20"
+								xmlns="http://www.w3.org/2000/svg"
+								class="ionicon"
+								viewBox="0 0 512 512"
+							>
+								<path d="M144 448l224-192L144 64v384z" />
+							</svg>
+						</button>
+					</ul>
+
+					<!-- <button class="slider-btn slider-btn-left relative flex justify-center items-center">
+						<svg
+							class="absolute left-1"
+							width="20"
+							height="20"
+							xmlns="http://www.w3.org/2000/svg"
+							class="ionicon"
+							viewBox="0 0 512 512"
+						>
+							<path d="M368 64L144 256l224 192V64z" />
+						</svg>
+					</button>
+					<button class="slider-btn slider-btn-right relative flex justify-center items-center">
+						<svg
+							class="absolute right-1"
+							width="20"
+							height="20"
+							xmlns="http://www.w3.org/2000/svg"
+							class="ionicon"
+							viewBox="0 0 512 512"
+						>
+							<path d="M144 448l224-192L144 64v384z" />
+						</svg>
+					</button> -->
+					<div class="dots absolute bottom-[1.4%] md:bottom-[2.5%] left-1/2 -translate-x-1/2 flex justify-center"></div>
 				</div>
 			</section>
 

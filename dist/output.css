@@ -603,13 +603,13 @@ video {
 	} */
 
 .dot{
-  margin-right: 1.75rem;
+  margin-right: 0.75rem;
   height: 1rem;
   width: 1rem;
   cursor: pointer;
   border-radius: 9999px;
   --tw-bg-opacity: 1;
-  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
   opacity: 0.7;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -650,8 +650,16 @@ video {
   left: 0px;
 }
 
+.left-1{
+  left: 0.25rem;
+}
+
 .left-1\/2{
   left: 50%;
+}
+
+.right-1{
+  right: 0.25rem;
 }
 
 .top-0{
@@ -769,8 +777,8 @@ video {
   aspect-ratio: 3/2;
 }
 
-.aspect-square{
-  aspect-ratio: 1 / 1;
+.aspect-auto{
+  aspect-ratio: auto;
 }
 
 .h-\[100px\]{
@@ -1009,35 +1017,31 @@ video {
 }
 
 .bg-hero{
-  background-image: url('/assets/pullup.jpg');
+  background-image: url('./assets/pullup.jpg');
 }
 
 .bg-home-card-1{
-  background-image: url('/assets/client2.jpg');
+  background-image: url('./assets/client2.jpg');
 }
 
 .bg-home-card-2{
-  background-image: url('/assets/rings.jpg');
+  background-image: url('./assets/rings.jpg');
 }
 
 .bg-home-card-3{
-  background-image: url('/assets/stretch.jpg');
+  background-image: url('./assets/stretch.jpg');
 }
 
 .bg-location-primary{
-  background-image: url('/assets/physiothenix-room.jpg');
-}
-
-.bg-location-secondary{
-  background-image: url('/assets/gym.jpg');
+  background-image: url('./assets/physiothenix-room.jpg');
 }
 
 .bg-services-primary{
-  background-image: url('/assets/rings.jpg');
+  background-image: url('./assets/rings.jpg');
 }
 
 .bg-services-secondary{
-  background-image: url('/assets/stretch.jpg');
+  background-image: url('./assets/stretch.jpg');
 }
 
 .from-\[\#21174A\]{
@@ -1359,7 +1363,7 @@ td{
   top: 50%;
   z-index: 10;
   border: none;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(191, 190, 190, 0.7);
   font-family: inherit;
   color: #333;
   border-radius: 50%;
@@ -1441,7 +1445,17 @@ td{
   }
 }
 
+@media not all and (min-width: 550px){
+  .max-sm\:h-\[55rem\]{
+    height: 55rem;
+  }
+}
+
 @media (min-width: 550px){
+  .sm\:h-\[37rem\]{
+    height: 37rem;
+  }
+
   .sm\:w-48{
     width: 12rem;
   }
@@ -1463,6 +1477,14 @@ td{
 @media (min-width: 1100px){
   .md\:static{
     position: static;
+  }
+
+  .md\:bottom-\[2\.25\%\]{
+    bottom: 2.25%;
+  }
+
+  .md\:bottom-\[2\.5\%\]{
+    bottom: 2.5%;
   }
 
   .md\:m-0{
@@ -1500,6 +1522,10 @@ td{
 
   .md\:h-\[429px\]{
     height: 429px;
+  }
+
+  .md\:h-\[25rem\]{
+    height: 25rem;
   }
 
   .md\:max-h-\[750px\]{
@@ -1541,6 +1567,10 @@ td{
 
   .md\:w-full{
     width: 100%;
+  }
+
+  .md\:min-w-\[475px\]{
+    min-width: 475px;
   }
 
   .md\:max-w-\[280px\]{
@@ -1695,6 +1725,10 @@ td{
 }
 
 @media (min-width: 1500px){
+  .lg\:h-\[22rem\]{
+    height: 22rem;
+  }
+
   .lg\:min-h-screen{
     min-height: 100vh;
   }
