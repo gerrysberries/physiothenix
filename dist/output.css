@@ -805,6 +805,10 @@ video {
   height: auto;
 }
 
+.h-full{
+  height: 100%;
+}
+
 .max-h-\[480px\]{
   max-height: 480px;
 }
@@ -924,10 +928,6 @@ video {
 
 .self-start{
   align-self: flex-start;
-}
-
-.self-end{
-  align-self: flex-end;
 }
 
 .self-center{
