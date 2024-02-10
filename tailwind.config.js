@@ -36,7 +36,7 @@ module.exports = {
 			},
 			backgroundImage: {
 				hero: "url('/assets/pullup.jpg')",
-				'home-card-1': "url('/assets/client.png')",
+				'home-card-1': "url('/assets/client2.jpg')",
 				'home-card-2': "url('/assets/rings.jpg')",
 				'home-card-3': "url('/assets/stretch.jpg')",
 				'services-primary': "url('/assets/rings.jpg')",
