@@ -1074,80 +1074,16 @@ video {
   background-size: cover;
 }
 
-.bg-center{
-  background-position: center;
-}
-
-.bg-\[center_top_1rem\]{
-  background-position: center top 1rem;
-}
-
-.bg-\[center_top_5rem\]{
-  background-position: center top 5rem;
-}
-
-.bg-\[center_top_10rem\]{
-  background-position: center top 10rem;
-}
-
-.bg-\[center_top\]{
-  background-position: center top;
-}
-
-.bg-\[center\]{
-  background-position: center;
-}
-
-.bg-\[top\]{
-  background-position: top;
-}
-
-.bg-\[bottom\]{
-  background-position: bottom;
-}
-
-.bg-\[center_top_100px\]{
-  background-position: center top 100px;
-}
-
-.bg-\[center_top_200px\]{
-  background-position: center top 200px;
-}
-
-.bg-\[center_top_300px\]{
-  background-position: center top 300px;
-}
-
-.bg-\[center_top_-300px\]{
-  background-position: center top -300px;
-}
-
-.bg-\[center_top_-25\%\]{
-  background-position: center top -25%;
-}
-
 .bg-\[center_top_25\%\]{
   background-position: center top 25%;
 }
 
-.bg-\[center_top_50\%\]{
-  background-position: center top 50%;
-}
-
-.bg-\[center_top_75\%\]{
-  background-position: center top 75%;
-}
-
-.bg-\[center_top_40\%\]{
-  background-position: center top 40%;
-}
-
-.bg-\[center_top_30\%\]{
-  background-position: center top 30%;
-}
-
 .bg-\[center_top_35\%\]{
   background-position: center top 35%;
+}
+
+.bg-center{
+  background-position: center;
 }
 
 .bg-no-repeat{
@@ -1791,10 +1727,6 @@ td{
 @media (min-width: 1500px){
   .lg\:h-\[22rem\]{
     height: 22rem;
-  }
-
-  .lg\:min-h-screen{
-    min-height: 100vh;
   }
 
   .lg\:min-h-\[60vh\]{
