@@ -801,6 +801,10 @@ video {
   height: 460px;
 }
 
+.h-\[60vh\]{
+  height: 60vh;
+}
+
 .h-\[70px\]{
   height: 70px;
 }
@@ -811,10 +815,6 @@ video {
 
 .h-full{
   height: 100%;
-}
-
-.h-\[60vh\]{
-  height: 60vh;
 }
 
 .max-h-\[480px\]{
@@ -1735,10 +1735,6 @@ td{
 @media (min-width: 1500px){
   .lg\:h-\[22rem\]{
     height: 22rem;
-  }
-
-  .lg\:min-h-\[60vh\]{
-    min-height: 60vh;
   }
 
   .lg\:w-80{

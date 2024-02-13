@@ -222,27 +222,6 @@
 					</li>
 				</ul>
 
-				<!-- <svg
-					id="hamburger-button"
-					width="24"
-					height="25"
-					viewBox="0 0 24 25"
-					fill="none"
-					xmlns="http://www.w3.org/2000/svg"
-					class="text-light md:hidden cursor-pointer"
-				>
-					<g id="menu-04">
-						<path
-							id="Icon"
-							d="M3 12.5H21M3 6.5H21M9 18.5H21"
-							stroke="currentColor"
-							stroke-width="2"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-						/>
-					</g>
-				</svg> -->
-
 				<span
 					id="hamburger-button"
 					class="text-light text-3xl cursor-pointer mx-2 md:hidden block"
@@ -283,12 +262,15 @@
 				class="pb-16 md:pb-0 text-white bg-gradient-to-t from-[#21174A] to-[#551863] md:flex md:flex-row-reverse"
 			>
 				<div class="w-full">
-					<img
-						class="max-h-[480px] w-full object-cover object-top md:max-h-[750px]"
-						src="./assets/client2.jpg"
-						alt="guy working out"
-						loading="lazy"
-					/>
+					<picture>
+						<source srcset="./assets/client2.webp" />
+						<img
+							class="max-h-[480px] w-full object-cover object-top md:max-h-[750px]"
+							src="./assets/client2.jpg"
+							alt="man working out"
+							loading="lazy"
+						/>
+					</picture>
 				</div>
 				<div class="wrapper md:pl-[5vw]">
 					<h2 class="text-center uppercase font-extrabold text-2xl mb-9 mt-16">We value helping you</h2>
@@ -355,12 +337,15 @@
 				<div class="wrapper">
 					<div class="md:flex md:flex-row-reverse gap-4">
 						<div class="mx-auto w-1/2 md:max-w-[280px]">
-							<img
-								src="./assets/landyn-portrait.jpg"
-								alt="Portrait of Physiothenix founder, Landyn Quigley"
-								class="rounded-full w-full mx-auto mb-6"
-								loading="lazy"
-							/>
+							<picture>
+								<source srcset="./assets/landyn-portrait.webp" />
+								<img
+									src="./assets/landyn-portrait.jpg"
+									alt="Portrait of Physiothenix founder, Landyn Quigley"
+									class="rounded-full w-full mx-auto mb-6"
+									loading="lazy"
+								/>
+							</picture>
 						</div>
 						<div class="">
 							<h2 class="uppercase font-extrabold text-2xl tracking-wider mb-2">Landyn quigley</h2>

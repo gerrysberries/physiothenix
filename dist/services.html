@@ -217,27 +217,6 @@
 					</li>
 				</ul>
 
-				<!-- <svg
-					id="hamburger-button"
-					width="24"
-					height="25"
-					viewBox="0 0 24 25"
-					fill="none"
-					xmlns="http://www.w3.org/2000/svg"
-					class="text-light md:hidden cursor-pointer"
-				>
-					<g id="menu-04">
-						<path
-							id="Icon"
-							d="M3 12.5H21M3 6.5H21M9 18.5H21"
-							stroke="currentColor"
-							stroke-width="2"
-							stroke-linecap="round"
-							stroke-linejoin="round"
-						/>
-					</g>
-				</svg> -->
-
 				<span
 					id="hamburger-button"
 					class="text-light text-3xl cursor-pointer mx-2 md:hidden block"
@@ -337,12 +316,15 @@
 							</div>
 						</div>
 						<div class="hidden md:block flex-1">
-							<img
-								class="md:block w-full object-cover md:max-h-[900px]"
-								src="./assets/stretch.jpg"
-								alt="female client stretching"
-								loading="lazy"
-							/>
+							<picture>
+								<source srcset="./assets/stretch.webp" />
+								<img
+									class="md:block w-full object-cover md:max-h-[900px]"
+									src="./assets/stretch.jpg"
+									alt="female client stretching"
+									loading="lazy"
+								/>
+							</picture>
 						</div>
 					</div>
 				</div>
@@ -375,12 +357,15 @@
 
 					<div class="md:flex md:bg-light justify-center items-center">
 						<div class="hidden md:block md:flex-1">
-							<img
-								class="md:block w-full object-cover max-h-[900px]"
-								src="./assets/client2.jpg"
-								alt="guy working out"
-								loading="lazy"
-							/>
+							<picture>
+								<source srcset="./assets/client2.webp" />
+								<img
+									class="md:block w-full object-cover max-h-[900px]"
+									src="./assets/client2.jpg"
+									alt="guy working out"
+									loading="lazy"
+								/>
+							</picture>
 						</div>
 						<div class="md:flex-1 text-left md:py-20">
 							<ul class="md:list-disc md:w-4/5 md:mx-auto flex flex-col gap-4">
