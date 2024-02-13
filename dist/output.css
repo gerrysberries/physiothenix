@@ -793,10 +793,6 @@ video {
   height: 40vh;
 }
 
-.h-\[424px\]{
-  height: 424px;
-}
-
 .h-\[460px\]{
   height: 460px;
 }
@@ -1300,10 +1296,6 @@ video {
 
 .bg-blend-soft-light{
   background-blend-mode: soft-light;
-}
-
-.outline{
-  outline-style: solid;
 }
 
 .filter{
