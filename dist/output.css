@@ -813,6 +813,10 @@ video {
   height: 100%;
 }
 
+.h-\[60vh\]{
+  height: 60vh;
+}
+
 .max-h-\[480px\]{
   max-height: 480px;
 }
@@ -1526,6 +1530,10 @@ td{
 
   .md\:h-\[429px\]{
     height: 429px;
+  }
+
+  .md\:h-\[65vh\]{
+    height: 65vh;
   }
 
   .md\:max-h-\[750px\]{
