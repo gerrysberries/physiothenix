@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-	content: ['./dist/**/*.{html,js}', './src/**/*.{js,ts,jsx,tsx}'],
+	content: ['./dist/**/*.{html,js}', './src/**/*.{js,ts,jsx,tsx}', './index.html'],
 	theme: {
 		fontSize: {
 			xs: ['12px', '16px'],
@@ -42,7 +42,7 @@ module.exports = {
 				'services-primary': "url('./assets/rings.jpg')",
 				'services-secondary': "url('./assets/stretch.jpg')",
 				'location-primary': "url('./assets/physiothenix-room.jpg')",
-				'location-secondary': "url('./assets/gym.jpg')",
+				'location-primary-m': "url('./assets/physiothenix-room-m.jpg')",
 			},
 			screens: {
 				sm: '550px',
