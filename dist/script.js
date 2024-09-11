@@ -92,7 +92,7 @@ async function fetchReviews() {
 		if (!response.ok) {
 			throw new Error('Network response was not ok');
 		}
-		const data = await response.json(); // Parse the JSON response once the promise is resolved
+		const data = await response.json();
 
 		data.reviews
 			.filter(review => review.originalText.text.split(' ').length < 275)
@@ -119,13 +119,12 @@ async function fetchReviews() {
 				reviewList.insertAdjacentHTML('beforeend', newLiHTML);
 			});
 
-		setupCarousel(); // Ensure this is called after fetching and processing the data
+		setupCarousel();
 	} catch (error) {
 		console.error('There has been a problem with your fetch operation:', error);
 	}
 }
 
-// Call the async function to fetch reviews
 fetchReviews();
 
 setupCarousel();
